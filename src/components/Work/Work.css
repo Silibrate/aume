@@ -2,18 +2,20 @@
   max-width: 1920px;
   margin: auto;
   background-color: white;
+  padding-top: 250px;
 }
 
 .work__container {
+  padding-top: 200px;
+  padding-bottom: 450px;
   max-width: calc(100% - 426px);
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: url('../../images/WORK.svg');
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .work__card {
@@ -22,6 +24,10 @@
 
 .work__card__img {
   margin-bottom: 10px;
+}
+
+.work__card:nth-child(1) {
+  margin-top: 600px;
 }
 
 .work__card:nth-child(2n) {
@@ -39,4 +45,107 @@
   line-height: 22px;
   letter-spacing: -0.01em;
   color: #000000;
+}
+
+.element-show {
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.element-show_end {
+  background-position: bottom;
+  background-attachment: initial;
+}
+
+.work__all {
+  margin-top: 350px;
+  padding-bottom: 700px;
+}
+
+.work__all_show{
+  margin-top: 1200px;
+  padding-bottom: 400px;
+}
+.work__all_show_end{
+  padding-bottom: 155px;
+}
+
+.work__all__container {
+  position: relative;
+  max-width: calc(100% - 60px);
+  margin: auto;
+}
+
+.work__all__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 257px;
+  margin-bottom: 600px;
+}
+
+.work__all__content::after {
+  content: '';
+  width: 1005px;
+  height: 1px;
+  top: 50%;
+  left: 19%;
+  position: absolute;
+  background-color: #000000;
+}
+
+.work__all__content_show {
+  position: fixed;
+  width: 1843px;
+  left: 1.6%;
+  right: auto;
+  top: 34%;
+  margin-bottom: 0;
+}
+
+.work__all__content_show_end{
+  position: relative;
+  left: 0;
+}
+
+.work__all__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 86px;
+  letter-spacing: -0.01em;
+}
+
+.work__all__text_left {
+  max-width: 552px;
+
+}
+
+.work__all__text_right {
+  max-width: 433px;
+  text-align: left;
+  align-self: end;
+}
+
+.work__all__link {
+  position: absolute;
+  left: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  background: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.work__all__link_show{
+  top: 20px;
+  background-color: #fa9108;
 }

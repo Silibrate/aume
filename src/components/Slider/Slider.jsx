@@ -5,11 +5,8 @@ import sliderCircol from '../../images/sliderCircol.svg';
 import "./slick.css";
 import "./slick-theme.css";
 import { useEffect } from "react";
-import { useRef } from "react";
 
 const MySlider = () => {
-
-  const cursor = useRef(null)
 
   useEffect(() => {
     const cursor = document.querySelector('.follow-cursor');
@@ -72,7 +69,7 @@ const MySlider = () => {
         <div className="slider__card slider__card_circle">
           <div className="slider__card__container_circle">
             <img className="slider__card__img " src={sliderCircol} alt="Circul" />
-            <div ref={cursor} className="box-pointer  follow-cursor"></div>
+            <div className="follow-cursor"></div>
           </div>
         </div>
       </div>

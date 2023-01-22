@@ -1,0 +1,146 @@
+.comments {
+  max-width: 1920px;
+  margin: auto;
+  background-color: black;
+  color: #FFFFFF;
+  padding-top: 170px;
+  padding-bottom: 180px;
+}
+
+.comments__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.comments__contents {
+  display: flex;
+}
+
+.comments__buttons {
+  display: flex;
+}
+
+.comments__buttons__img {
+  width: 48px;
+  border-radius: 50%;
+  height: 48px;
+  background-color: #FFFFFF;
+}
+
+.comments__button {
+  cursor: pointer;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #C32037;
+}
+
+.comments__button__prev {
+  margin-left: 105px;
+}
+
+.comments__button__next {
+  margin-left: 8px;
+}
+
+.comments__content {
+  display: none;
+  margin-left: 506px;
+}
+
+.comments__content_active {
+  display: block;
+}
+
+.comments__content__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  max-width: 797px;
+}
+
+.comments__content__avtor {
+  display: flex;
+  margin-top: 100px;
+}
+
+.comments__content__avtor__img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comments__content__avtor__info {
+  margin-left: 25px;
+}
+
+.comments__content__avtor__info__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+}
+
+.comments__content__avtor__info__about {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  opacity: 0.4;
+}
+
+.comments__title {
+  margin: 0;
+  margin-left: 763px;
+  margin-top: 220px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 115px;
+  letter-spacing: -0.01em;
+}
+
+.comments__text {
+  max-width: 493px;
+  margin-left: 763px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  margin-top: 30px;
+}
+
+.comments__img {
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+  margin-top: 77px;
+  margin-bottom: 77px;
+}
+
+.comments__text_bottom {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.comments__text_bottom:last-child{
+  margin-top: 20px;
+}
+
+.comments__button__about{
+  margin-left: 763px;
+  margin-top: 58px;
+}

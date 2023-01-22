@@ -1,0 +1,68 @@
+.aumiForm {
+  max-width: 1920px;
+  margin: auto;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: black;
+}
+
+.aumiForm__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aumiForm__title {
+  margin: 0;
+  margin-left: 125px;
+  max-width: 588px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 86px;
+  letter-spacing: -0.01em;
+  height: 100%;
+  align-self: center;
+}
+
+.aumiForm__form {
+  padding-top: 227px;
+  padding-bottom: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-left: 1px solid #FFFFFF;
+}
+
+.aumiForm__form__input {
+  background: none;
+  width: 580px;
+  max-width: 580px;
+  margin-top: 30px;
+  border: none;
+  padding-bottom: 23px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #787575;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.aumiForm__form__button {
+  cursor: pointer;
+  margin-top: 100px;
+  background: #C32037;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
