@@ -1,0 +1,42 @@
+.work {
+  max-width: 1920px;
+  margin: auto;
+  background-color: white;
+}
+
+.work__container {
+  max-width: calc(100% - 426px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('../../images/WORK.svg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.work__card {
+  margin-bottom: 100px;
+}
+
+.work__card__img {
+  margin-bottom: 10px;
+}
+
+.work__card:nth-child(2n) {
+  align-self: flex-end;
+}
+
+.work__card:nth-child(3n) {
+  align-self: center;
+}
+
+.work__card__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}

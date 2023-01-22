@@ -1,0 +1,41 @@
+.header {
+  padding-top: 32px;
+  background-color: black;
+  max-width: 1920px;
+  margin: auto;
+  color: white;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(100% - 120px);
+  margin: auto;
+}
+
+.header__lenguich {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__lenguich__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-left: 104px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__button {
+  margin-right: 37px;
+}
