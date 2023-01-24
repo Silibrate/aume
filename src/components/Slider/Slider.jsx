@@ -30,7 +30,7 @@ const MySlider = () => {
   return (
     <div className="slider">
       <div className="slider__container">
-        <div className="slider__card">
+        <div className="slider__card slider__card_branding">
           <Link className="slider__card__link" to='/branding'>
             <div className="slider__card__container">
               <h2 className="slider__card__title">Branding</h2>
@@ -42,7 +42,7 @@ const MySlider = () => {
           </Link>
         </div>
 
-        <div className="slider__card">
+        <div className="slider__card slider__card_product">
           <Link className="slider__card__link" to='/product'>
             <div className="slider__card__container">
               <h2 className="slider__card__title">Product</h2>
@@ -54,7 +54,7 @@ const MySlider = () => {
           </Link>
         </div>
 
-        <div className="slider__card">
+        <div className="slider__card slider__card_development">
           <Link className="slider__card__link" to='/development'>
             <div className="slider__card__container">
               <h2 className="slider__card__title">Development</h2>
@@ -70,6 +70,8 @@ const MySlider = () => {
           <div className="slider__card__container_circle">
             <img className="slider__card__img " src={sliderCircol} alt="Circul" />
             <div className="follow-cursor"></div>
+          </div>
+          <div className="slider__card__img_bg">
           </div>
         </div>
       </div>

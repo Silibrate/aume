@@ -1,7 +1,9 @@
 import logo from '../../images/logo.svg';
 import menu from '../../images/headerBurger.svg';
+import Navigation from "../Navigation/Navigation";
 
-const Header = () => {
+const Header = ({ isOpenMenu, openMenu, closeMenu }) => {
+
   return (
     <header className="header">
       <div className="header__container">
@@ -11,9 +13,13 @@ const Header = () => {
         </div>
         <div className="header__menu">
           <button className='header__button button'>Get in touch</button>
-          <img src={menu} alt="Menu" />
+          <img onClick={() => openMenu()} className='header__menu_img' src={menu} alt="Menu" />
         </div>
       </div>
+      <Navigation 
+      onCloseMenu={closeMenu}
+      isOpenMenu={isOpenMenu}
+      />
     </header>
   );
 }

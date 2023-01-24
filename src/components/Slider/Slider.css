@@ -129,6 +129,7 @@
   display: flex;
   justify-content: center;
   height: 800px;
+  position: relative;
 }
 
 .slider__card__img {
@@ -140,12 +141,48 @@
   z-index: -1;
 }
 
-.slider__card__container_circle{
+.slider__card_product:hover~.slider__card .slider__card__img_bg {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-image: url('../../images/bunka.png');
+}
+
+.slider__card_branding:hover~.slider__card .slider__card__img_bg {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-image: url('../../images/kirpich.png');
+}
+
+.slider__card_development:hover~.slider__card .slider__card__img_bg {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-image: url('../../images/home.png');
+}
+
+.slider__card__container_circle {
   max-width: 100%;
   max-height: 300px;
   align-self: center;
   position: relative;
-  z-index: 20;
+  z-index: 9;
 }
 
 @keyframes rotate {
@@ -178,7 +215,7 @@
   transition: all 0.1s linear;
 }
 
-.slider__card__cursor{
+.slider__card__cursor {
   max-width: 100%;
   align-self: center;
 }

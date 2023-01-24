@@ -6,20 +6,36 @@ import Progress from "../Progress/Progress";
 import Work from "../Work/Work";
 import Comments from "../Comments/Comments";
 import AumiForm from "../AumiForm/AumiForm";
+import Footer from "../Footer/Footer";
+import { useState } from "react";
 
 
 function App() {
 
+  const [isOpenMenu, setIsOpenMenu] = useState(false)
+
+  const openMenu = () => {
+    setIsOpenMenu(true)
+  }
+  const closeMenu = () => {
+    setIsOpenMenu(false)
+  }
+
   return (
     <div className="App">
-      <Header />
+      <Header
+        isOpenMenu={isOpenMenu}
+        openMenu={openMenu}
+        closeMenu={closeMenu}
+      />
       <AumiInfo />
       <Creative />
       <Slider />
       <Progress />
       <Work />
-      <Comments/>
-      <AumiForm/>
+      <Comments />
+      <AumiForm />
+      <Footer />
     </div>
   );
 }
