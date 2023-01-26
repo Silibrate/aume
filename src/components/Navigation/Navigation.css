@@ -43,13 +43,13 @@
   transition: all 0.3s linear;
 }
 
-.navigation__container_open{
+.navigation__container_open {
   left: 0;
   transition: all 0.3s linear;
 }
 
 .navigation__nav {
-  padding-top: 144px;
+  padding-top: 51px;
   margin-left: 37px;
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@
   opacity: 0.6;
 }
 
-.navigation__nav__link_red {
+.navigation__nav__link:hover {
   color: #C32037;
   opacity: 1;
 }
@@ -80,7 +80,7 @@
 
 .navigation__footer {
   display: flex;
-  margin-top: 216px;
+  margin-top: 107px;
   margin-left: 37px;
   padding-bottom: 70px;
 }
@@ -91,6 +91,7 @@
 }
 
 .navigation__footer__text {
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -99,13 +100,17 @@
 }
 
 .navigation__footer__link {
-  margin-top: 25px;
+  margin-top: 18px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: -0.01em;
   color: #FFFFFF;
+}
+
+.navigation__footer__link:hover {
+  color: #C32037;
 }
 
 .navigation__footer__email {

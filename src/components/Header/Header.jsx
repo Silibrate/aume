@@ -16,9 +16,9 @@ const Header = ({ isOpenMenu, openMenu, closeMenu }) => {
           <img onClick={() => openMenu()} className='header__menu_img' src={menu} alt="Menu" />
         </div>
       </div>
-      <Navigation 
-      onCloseMenu={closeMenu}
-      isOpenMenu={isOpenMenu}
+      <Navigation
+        onCloseMenu={closeMenu}
+        isOpenMenu={isOpenMenu}
       />
     </header>
   );

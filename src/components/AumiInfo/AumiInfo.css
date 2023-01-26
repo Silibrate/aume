@@ -5,11 +5,11 @@
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
-  padding-top: 602px;
+  padding-top: 479px;
   padding-bottom: 61px;
 }
 
-.aumiInfo__container{
+.aumiInfo__container {
   padding-left: 60px;
 }
 
@@ -35,12 +35,12 @@
   margin-top: 32px;
 }
 
-.aumiInfo__button{
+.aumiInfo__button {
   margin-top: 60px;
   width: 142px;
 }
 
-.header, .aumiInfo{
+.header, .aumiInfo {
   background-image: url('../../images/fonarik.png');
   background-repeat: no-repeat;
   background-attachment: fixed;

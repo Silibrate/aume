@@ -1,4 +1,5 @@
 .work {
+  position: relative;
   max-width: 1920px;
   margin: auto;
   background-color: white;
@@ -6,6 +7,7 @@
 }
 
 .work__container {
+  position: relative;
   padding-top: 200px;
   padding-bottom: 450px;
   max-width: calc(100% - 426px);
@@ -13,12 +15,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url('../../images/WORK.svg');
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .work__card {
+  z-index: 2;
   margin-bottom: 100px;
 }
 
@@ -26,16 +26,17 @@
   margin-bottom: 10px;
 }
 
-.work__card:nth-child(1) {
+.work__card:nth-child(2) {
   margin-top: 600px;
-}
-
-.work__card:nth-child(2n) {
-  align-self: flex-end;
 }
 
 .work__card:nth-child(3n) {
   align-self: center;
+}
+
+.work__card:nth-child(4) {
+  align-self: flex-end;
+  margin-bottom: 500px;
 }
 
 .work__card__subtitle {
@@ -47,41 +48,24 @@
   color: #000000;
 }
 
-.element-show {
-  background-attachment: fixed;
-  background-position: center;
-}
-
-.element-show_end {
-  background-position: bottom;
-  background-attachment: initial;
-}
-
 .work__all {
   margin-top: 350px;
-  padding-bottom: 700px;
-}
-
-.work__all_show{
-  margin-top: 1200px;
-  padding-bottom: 400px;
-}
-.work__all_show_end{
-  padding-bottom: 155px;
 }
 
 .work__all__container {
   position: relative;
+  height: 1445px;
   max-width: calc(100% - 60px);
   margin: auto;
+  padding-bottom: 200px;
 }
 
 .work__all__content {
-  position: relative;
+  position: sticky;
+  top: 25%;
   display: flex;
   justify-content: space-between;
   min-height: 257px;
-  margin-bottom: 600px;
 }
 
 .work__all__content::after {
@@ -92,20 +76,6 @@
   left: 19%;
   position: absolute;
   background-color: #000000;
-}
-
-.work__all__content_show {
-  position: fixed;
-  width: 1843px;
-  left: 1.6%;
-  right: auto;
-  top: 34%;
-  margin-bottom: 0;
-}
-
-.work__all__content_show_end{
-  position: relative;
-  left: 0;
 }
 
 .work__all__text {
@@ -130,6 +100,7 @@
 .work__all__link {
   position: absolute;
   left: 43%;
+  top: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +116,18 @@
   color: #FFFFFF;
 }
 
-.work__all__link_show{
+.work__all__link_show {
   top: 20px;
   background-color: #fa9108;
+}
+
+.Work__text_bg {
+  position: sticky;
+  top: 25%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 500px;
+  line-height: 450px;
+  letter-spacing: -0.01em;
+  color: #000000;
 }

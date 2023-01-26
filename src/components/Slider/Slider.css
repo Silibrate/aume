@@ -59,7 +59,7 @@
   min-width: 0;
   min-height: 100%;
   background-color: white;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .slider__card__link::before {
@@ -70,17 +70,17 @@
   min-width: 0;
   min-height: 100%;
   background-color: white;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .slider__card__link:hover::after {
   min-width: 50%;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .slider__card__link:hover::before {
   min-width: 51%;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .slider__card__arrow {

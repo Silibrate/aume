@@ -110,12 +110,14 @@
 .comments__text {
   max-width: 493px;
   margin-left: 763px;
+  margin-top: 30px;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: 0.01em;
-  margin-top: 30px;
+  color: #FFFFFF;
+  opacity: 0.9;
 }
 
 .comments__img {
@@ -127,20 +129,20 @@
 }
 
 .comments__text_bottom {
+  font-family: 'HelveticaNeueCyr';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.6;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.comments__text_bottom:last-child{
   margin-top: 20px;
 }
 
-.comments__button__about{
+.comments__button__about {
   margin-left: 763px;
   margin-top: 58px;
 }
