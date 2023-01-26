@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import menu from '../../images/headerBurger.svg';
 import Navigation from "../Navigation/Navigation";
 
-const Header = ({ isOpenMenu, openMenu, closeMenu }) => {
+const Header = ({ isOpenMenu, openMenu, closeMenu, ...psops }) => {
 
+console.log(psops)
   return (
-    <header className="header">
+    <header className={`header ${psops.class}`}>
       <div className="header__container">
         <div className="header__lenguich">
-          <img className='header__logo' src={logo} alt="Logo" />
+          <Link to='/'><img className='header__logo' src={logo} alt="Logo" /></Link>
           <p className='header__lenguich__text'>En</p>
         </div>
         <div className="header__menu">

@@ -4,7 +4,6 @@ import kirpich from '../../images/kirpich.png';
 import bunka from '../../images/bunka.png';
 
 const Work = () => {
-
   return (
     <section className="work">
       <div className={`work__container`} >
@@ -30,7 +29,7 @@ const Work = () => {
             <p className="work__all__text work__all__text_left">Take a look at what</p>
             <p className="work__all__text work__all__text_right">we can do for you</p>
           </div>
-          <Link className={`work__all__link `} to='work'>All work</Link>
+          <Link onClick={'scroll:0'} className={`work__all__link `} to='/works'>All work</Link>
         </div>
       </div>
     </section >

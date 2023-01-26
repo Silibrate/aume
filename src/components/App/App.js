@@ -1,40 +1,39 @@
-import Header from "../Header/Header";
-import AumiInfo from "../AumiInfo/AumiInfo";
-import Creative from "../Creative/Creative";
-import Slider from "../Slider/Slider";
-import Progress from "../Progress/Progress";
-import Work from "../Work/Work";
-import Comments from "../Comments/Comments";
-import AumiForm from "../AumiForm/AumiForm";
+import { Routes, Route } from "react-router-dom";
+import Main from "../Main/Main";
+import Works from "../../Pages/Works/Works";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
 
 
 function App() {
+  const body = document.querySelector('.body');
 
   const [isOpenMenu, setIsOpenMenu] = useState(false)
 
   const openMenu = () => {
     setIsOpenMenu(true)
+    body.style.overflow = 'hidden';
   }
   const closeMenu = () => {
     setIsOpenMenu(false)
+    body.style.overflow = 'auto';
   }
 
   return (
-    <div className="App">
-      <Header
-        isOpenMenu={isOpenMenu}
-        openMenu={openMenu}
-        closeMenu={closeMenu}
-      />
-      <AumiInfo />
-      <Creative />
-      <Slider />
-      <Progress />
-      <Work />
-      <Comments />
-      <AumiForm />
+    <div className={`App ${isOpenMenu ? "App_hiden" : ""}`}>
+      <Routes>
+        <Route path='/' element={<Main
+          isOpenMenu={isOpenMenu}
+          openMenu={openMenu}
+          closeMenu={closeMenu}
+        />}></Route>
+
+        <Route path='/works' element={<Works
+          isOpenMenu={isOpenMenu}
+          openMenu={openMenu}
+          closeMenu={closeMenu}
+        />}></Route>
+      </Routes>
       <Footer />
     </div>
   );

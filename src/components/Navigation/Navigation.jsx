@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 /* import arrow from '../../images/footerArrow.svg' */
 import closeMenu from '../../images/closeMenu.svg';
 
@@ -17,13 +17,13 @@ const Navigation = ({ onCloseMenu, isOpenMenu }) => {
           <img onClick={() => onCloseMenu()} className='header__menu_img' src={closeMenu} alt="Menu" />
         </div>
         <nav className="navigation__nav">
-          <Link className="navigation__nav__link" to="works">Works</Link>
-          <Link className="navigation__nav__link" to="price">Price</Link>
-          <Link className="navigation__nav__link" to="news">News</Link>
-          <Link className="navigation__nav__link" to="about">About us</Link>
-          <Link className="navigation__nav__link" to="contact">Contact</Link>
-          <Link className="navigation__nav__link" to="services">Services</Link>
-          <Link className="navigation__nav__link" to="faq">Faq</Link>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="/works">Works</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="price">Price</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="news">News</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="about">About us</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="contact">Contact</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="services">Services</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="faq">Faq</NavLink>
         </nav>
         <div className="navigation__footer">
           <div className="navigation__footer__socials">

@@ -121,3 +121,8 @@
 .navigation__footer__email {
   margin-left: 40px;
 }
+
+.active{
+  opacity: 1;
+  color: #C32037;
+}

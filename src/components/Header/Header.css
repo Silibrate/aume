@@ -43,3 +43,14 @@
 .header__button {
   margin-right: 37px;
 }
+
+.header, .aumiInfo {
+  background-image: url('../../images/fonarik.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.header_bg {
+  background-image: none;
+}
