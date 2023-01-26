@@ -10,12 +10,14 @@
 }
 
 .creative__container {
+  position: relative;
   overflow: hidden;
   max-width: calc(100% - 120px);
   margin: auto;
 }
 
 .creative__text {
+  overflow: hidden;
   position: relative;
   font-style: normal;
   font-weight: 400;
@@ -44,16 +46,32 @@
   font-size: 400px;
   line-height: 360px;
   letter-spacing: -0.01em;
-  transition: all .2s linear;
+  transition: all 1s cubic-bezier(1,0,1,.32);
 }
 
 .creative__button {
+  position: absolute;
+  right: 122px;
+  bottom: 17px;
   width: 158px;
   height: 38px;
+}
+
+.creative__title_one{
+  transition: all 0.9s cubic-bezier(.39,0,.16,.94);
+}
+
+.creative__title_two{
+  transition: all 0.9s cubic-bezier(.39,0,.16,.94);
+  margin-top: 0px;
 }
 
 @media screen and (max-width:1919px) {
   .creative__title {
     font-size: 20vw;
   }
+}
+
+.test{
+  overflow: hidden;
 }

@@ -11,16 +11,31 @@
 
 .aumiInfo__container {
   padding-left: 60px;
+  max-width: 625px;
+}
+
+.aumiInfo__title__container{
+  overflow: hidden;
+}
+
+.aumiInfo__title__contant{
+  display: flex;
+  overflow: hidden;
+  min-height: 71px;
 }
 
 .aumiInfo__title {
   margin: 0;
-  max-width: 625px;
   font-style: normal;
   font-weight: 400;
   font-size: 62px;
   line-height: 68px;
   letter-spacing: -0.01em;
+  transition: all 0.9s cubic-bezier(.39,0,.16,.94);
+}
+
+.aumiInfo__title_two{
+  margin-left: 16px;
 }
 
 .aumiInfo__text {
@@ -33,6 +48,7 @@
   color: #FFFFFF;
   opacity: 0.7;
   margin-top: 32px;
+  transition: all 2s linear;
 }
 
 .aumiInfo__button {
