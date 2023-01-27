@@ -17,7 +17,7 @@ const Creative = () => {
       <motion.div
         initial='hidden'
         whileInView='visible'
-        viewport={{ amount: 0.3, once: true }}
+        viewport={{ amount: 0.2, once: true }}
         className="creative__container">
         <p className="creative__text">We call it</p>
         <motion.div

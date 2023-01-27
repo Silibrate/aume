@@ -105,6 +105,7 @@
   font-size: 128px;
   line-height: 115px;
   letter-spacing: -0.01em;
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
 .comments__text {

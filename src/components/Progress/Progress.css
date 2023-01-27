@@ -11,6 +11,8 @@
 }
 
 .progress__awards__container {
+  overflow: hidden;
+  position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 1132px;
@@ -33,6 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
 .progress__awards__card__logo__img {
@@ -56,7 +59,7 @@
   letter-spacing: -0.01em;
 }
 
-.progress__technology{
+.progress__technology {
   padding-top: 207px;
 }
 
@@ -78,6 +81,7 @@
   line-height: 22px;
   letter-spacing: -0.01em;
   color: rgba(255, 255, 255, 0.52);
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
 .progress__technology__title_red {
@@ -111,6 +115,7 @@
   line-height: 180px;
   letter-spacing: -0.01em;
   padding-bottom: 38px;
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
 .progress__technology__info__number_100::after {
@@ -136,6 +141,7 @@
 }
 
 .progress__technology__info__number__conteiner {
+  overflow: hidden;
   display: flex;
   margin-top: 95px;
   gap: 30px;
@@ -153,6 +159,7 @@
   font-size: 128px;
   line-height: 115px;
   letter-spacing: -0.01em;
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
 .progress__technology__info__number_small::after {
@@ -164,4 +171,8 @@
   background-color: #FFFFFF;
   bottom: 0;
   left: 0;
+}
+
+.block {
+  overflow: hidden;
 }
