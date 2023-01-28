@@ -75,6 +75,10 @@
   color: white;
 }
 
+.footer__link:hover {
+  color: #C32037;
+}
+
 .footer__link_first {
   margin-top: 0;
 }

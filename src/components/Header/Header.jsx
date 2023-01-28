@@ -3,11 +3,10 @@ import logo from '../../images/logo.svg';
 import menu from '../../images/headerBurger.svg';
 import Navigation from "../Navigation/Navigation";
 
-const Header = ({ isOpenMenu, openMenu, closeMenu, ...psops }) => {
+const Header = ({ isOpenMenu, openMenu, closeMenu, ...props }) => {
 
-console.log(psops)
   return (
-    <header className={`header ${psops.class}`}>
+    <header className={`header ${props.class}`}>
       <div className="header__container">
         <div className="header__lenguich">
           <Link to='/'><img className='header__logo' src={logo} alt="Logo" /></Link>

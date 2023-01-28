@@ -23,6 +23,7 @@
   letter-spacing: -0.01em;
   height: 100%;
   align-self: center;
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
 .aumiForm__form {

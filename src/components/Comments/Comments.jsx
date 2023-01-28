@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import covichki from '../../images/covichki.svg';
 import nextWhite from '../../images/nextWhite.svg';
 import prevWhite from '../../images/prevWhite.svg';
@@ -64,7 +64,7 @@ const Comments = () => {
       <motion.div
         initial='hidden'
         whileInView='visible'
-        viewport={{ amount: 0.3, once: true }}
+        viewport={{ amount: 0.8, once: true }}
         className="comments__container">
         <div className="comments__contents">
           <div className="comments__buttons">

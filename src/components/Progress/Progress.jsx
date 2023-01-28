@@ -104,11 +104,11 @@ const Progress = () => {
               <motion.p variants={animationOpacity} className='progress__technology__info__number__text'>Project’s done</motion.p>
             <div className="progress__technology__info__number__conteiner">
               <div className="progress__technology__info__number__content">
-                <motion.p variants={animation} className='progress__technology__info__number_small'>5+</motion.p>
+                <motion.p custom={2} variants={animation} className='progress__technology__info__number_small'>5+</motion.p>
                 <motion.p variants={animationOpacity} className='progress__technology__info__number__text'>Years of experience</motion.p>
               </div>
               <div className="progress__technology__info__number__content">
-                <motion.p variants={animation} className='progress__technology__info__number_small'>10+</motion.p>
+                <motion.p custom={3} variants={animation} className='progress__technology__info__number_small'>10+</motion.p>
                 <motion.p variants={animationOpacity} className='progress__technology__info__number__text'>Team members</motion.p>
               </div>
             </div>

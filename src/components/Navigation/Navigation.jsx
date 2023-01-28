@@ -18,12 +18,12 @@ const Navigation = ({ onCloseMenu, isOpenMenu }) => {
         </div>
         <nav className="navigation__nav">
           <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="/works">Works</NavLink>
-          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="price">Price</NavLink>
-          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="news">News</NavLink>
-          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="about">About us</NavLink>
-          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="contact">Contact</NavLink>
-          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="services">Services</NavLink>
-          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="faq">Faq</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="/price">Price</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="/news">News</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="/about">About us</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="/contact">Contact</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="/services">Services</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="navigation__nav__link" to="/faq">Faq</NavLink>
         </nav>
         <div className="navigation__footer">
           <div className="navigation__footer__socials">
