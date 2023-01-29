@@ -1,3 +1,7 @@
+.link{
+  border-bottom: 1px solid transparent;
+}
+
 .link:hover{
   color: #C32037;
   border-bottom: 1px solid #C32037;

@@ -70,11 +70,6 @@
   opacity: 0.6;
 }
 
-.navigation__nav__link:hover {
-  color: #C32037;
-  opacity: 1;
-}
-
 .navigation__nav__link__img {
   margin-right: 14px;
   max-width: 77px;
@@ -85,11 +80,11 @@
   display: flex;
   margin-top: 107px;
   margin-left: 37px;
-  padding-bottom: 70px;
 }
 
 .navigation__footer__socials {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -112,10 +107,6 @@
   color: #FFFFFF;
 }
 
-.navigation__footer__link:hover {
-  color: #C32037;
-}
-
 .navigation__footer__email {
   display: flex;
   flex-direction: column;
@@ -128,4 +119,5 @@
 .active{
   opacity: 1;
   color: #C32037;
+  border-bottom: 1px solid #C32037;
 }

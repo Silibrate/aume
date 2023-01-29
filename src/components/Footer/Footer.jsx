@@ -10,15 +10,15 @@ const Footer = () => {
           <div className='footer__content__socials'>
             <nav className='footer__content__nav'>
               <p className='footer__content__text'>Socials</p>
-              <Link className='footer__link footer__link_first' to='#'>Dribbble</Link>
-              <Link className='footer__link' to='#'>Instagram</Link>
-              <Link className='footer__link' to='#'>Github</Link>
-              <Link className='footer__link' to='#'>Twitter</Link>
-              <Link className='footer__link' to='#'>YouTube</Link>
+              <Link className='link footer__link footer__link_first' to='#'>Dribbble</Link>
+              <Link className='link footer__link' to='#'>Instagram</Link>
+              <Link className='link footer__link' to='#'>Github</Link>
+              <Link className='link footer__link' to='#'>Twitter</Link>
+              <Link className='link footer__link' to='#'>YouTube</Link>
             </nav>
             <div className='footer__content__email'>
               <p className='footer__content__text'>Email</p>
-              <Link className='footer__link' to='#'>info@dsx.agency</Link>
+              <Link className='link footer__link' to='#'>info@dsx.agency</Link>
             </div>
           </div>
         </div>

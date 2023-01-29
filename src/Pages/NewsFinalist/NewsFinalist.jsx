@@ -108,7 +108,16 @@ const NewsFinalist = ({ isOpenMenu, openMenu, closeMenu }) => {
 
           </div>
         </div>
-
+        <div className="news__card">
+            <Link onClick={'scroll:0'} className='news__card__link' to='/news'>
+              <p className="news__subtitle news__subtitle_one">More news</p>
+            </Link>
+          </div>  <div className="news__card">
+            <Link onClick={'scroll:0'} className='news__card__link' to='#'>
+              <p className="news__date">May 2, 2022</p>
+              <p className="news__subtitle">RocketAir expands leadership team, now majority women-led</p>
+            </Link>
+          </div>
       </section>
     </>
   );
