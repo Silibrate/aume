@@ -59,7 +59,7 @@
   min-width: 0;
   min-height: 100%;
   background-color: white;
-  transition: all 0.4s ease-out;
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
 .slider__card__link::before {
@@ -70,17 +70,17 @@
   min-width: 0;
   min-height: 100%;
   background-color: white;
-  transition: all 0.4s ease-out;
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
 .slider__card__link:hover::after {
   min-width: 50%;
-  transition: all 0.4s ease-out;
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
 .slider__card__link:hover::before {
   min-width: 51%;
-  transition: all 0.4s ease-out;
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
 .slider__card__arrow {
@@ -98,19 +98,19 @@
   border-color: #979797;
   border-radius: 200px;
   background-color: #000;
-  transition: all 0.3s linear;
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
   margin-right: 30px;
 }
 
 .slider__card__arrow__img_1 {
-  transition: all 0.2s linear;
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
 .slider__card__arrow__img_2 {
   transform: translate3d(-20px, 20px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   position: absolute;
-  transition: all 0.3s linear;
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
 .slider__card__link:hover .slider__card__arrow__img_2 {
@@ -141,40 +141,61 @@
   z-index: -1;
 }
 
-.slider__card_product:hover~.slider__card .slider__card__img_bg {
+.slider__card__img_bg-one{
+  width: 0;
+  left: 50%;
+}
+
+.slider__card__img_bg-two{
+  width: 0;
+  left: 50%;
+}
+
+.slider__card__img_bg-three{
+  width: 0;
+  left: 50%;
+}
+
+.slider__card_product:hover~.slider__card .slider__card__img_bg-one {
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 20;
   background-image: url('../../images/bunka.png');
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
-.slider__card_branding:hover~.slider__card .slider__card__img_bg {
+.slider__card_branding:hover~.slider__card .slider__card__img_bg-two {
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 20;
   background-image: url('../../images/kirpich.png');
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
-.slider__card_development:hover~.slider__card .slider__card__img_bg {
+.slider__card_development:hover~.slider__card .slider__card__img_bg-three {
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 20;
   background-image: url('../../images/home.png');
+  transition: all 0.5s cubic-bezier(0,.34,0,.94);
 }
 
 .slider__card__container_circle {

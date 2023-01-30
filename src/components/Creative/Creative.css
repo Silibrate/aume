@@ -17,6 +17,8 @@
 }
 
 .creative__text {
+  display: flex;
+  align-items: center;
   overflow: hidden;
   position: relative;
   font-style: normal;
@@ -24,17 +26,7 @@
   font-size: 32px;
   line-height: 35px;
   letter-spacing: -0.01em;
-}
-
-.creative__text::after {
-  content: '';
-  width: 90%;
-  height: 1px;
-  background-color: #FFFFFF;
-  position: absolute;
-  top: 50%;
-  opacity: 0.3;
-  right: 0;
+  transition: all 1s;
 }
 
 .creative__title {
@@ -46,7 +38,7 @@
   font-size: 400px;
   line-height: 360px;
   letter-spacing: -0.01em;
-  transition: all 1s cubic-bezier(1,0,1,.32);
+  transition: all 1s cubic-bezier(1, 0, 1, .32);
 }
 
 .creative__button {
@@ -57,13 +49,21 @@
   height: 38px;
 }
 
-.creative__title_one{
-  transition: all 0.9s cubic-bezier(.39,0,.16,.94);
+.creative__title_one {
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
-.creative__title_two{
-  transition: all 0.9s cubic-bezier(.39,0,.16,.94);
+.creative__title_two {
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
   margin-top: 0px;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: #626262;
+  transition: all 1s cubic-bezier(.39, 0, .16, .94);
+  margin-left: 50px;
 }
 
 @media screen and (max-width:1919px) {
@@ -72,6 +72,6 @@
   }
 }
 
-.test{
+.test {
   overflow: hidden;
 }

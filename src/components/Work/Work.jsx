@@ -29,7 +29,9 @@ const Work = () => {
             <p className="work__all__text work__all__text_left">Take a look at what</p>
             <p className="work__all__text work__all__text_right">we can do for you</p>
           </div>
-          <Link onClick={'scroll:0'} className={`work__all__link `} to='/works'>All work</Link>
+          <div className="wrapper__link  ">
+          <Link onClick={'scroll:0'}  className={`work__all__link `}  to='/works'>All work</Link>
+          </div>
         </div>
       </div>
     </section >

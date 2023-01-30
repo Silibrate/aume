@@ -25,6 +25,7 @@
   width: 48px;
   border-radius: 50%;
   height: 48px;
+  object-fit: scale-down;
   background-color: #FFFFFF;
 }
 
@@ -35,6 +36,13 @@
   height: 48px;
   border-radius: 50%;
   background-color: #C32037;
+  transition: all 1s cubic-bezier(0,.34,0,.94);
+}
+
+.comments__button:hover{
+  transform: scale(1.2);
+  transition: all 1s cubic-bezier(0,.34,0,.94);
+
 }
 
 .comments__button__prev {
@@ -42,7 +50,7 @@
 }
 
 .comments__button__next {
-  margin-left: 8px;
+  margin-left: 14px;
 }
 
 .comments__content {
@@ -61,6 +69,7 @@
   line-height: 34px;
   letter-spacing: 0.01em;
   max-width: 797px;
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
 .comments__content__avtor {
@@ -73,6 +82,7 @@
   height: 55px;
   border-radius: 50%;
   object-fit: cover;
+  transition: all 1.8s linear;
 }
 
 .comments__content__avtor__info {
@@ -85,6 +95,7 @@
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.01em;
+  transition: all 0.3s cubic-bezier(.39, 0, .16, .94);
 }
 
 .comments__content__avtor__info__about {
@@ -94,6 +105,7 @@
   line-height: 22px;
   letter-spacing: 0.01em;
   opacity: 0.4;
+  transition: all 0.3s cubic-bezier(.39, 0, .16, .94);
 }
 
 .comments__title {

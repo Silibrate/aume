@@ -71,8 +71,9 @@ const MySlider = () => {
             <img className="slider__card__img " src={sliderCircol} alt="Circul" />
             <div className="follow-cursor"></div>
           </div>
-          <div className="slider__card__img_bg">
-          </div>
+          <div className="slider__card__img_bg-one"> </div>
+          <div className="slider__card__img_bg-two"> </div>
+          <div className="slider__card__img_bg-three"> </div>
         </div>
       </div>
     </div>
