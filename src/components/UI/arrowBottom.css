@@ -1,0 +1,14 @@
+.arrow-bottom__img {
+  position: absolute;
+  animation: arrow-down 1.5s infinite linear;;
+}
+
+@keyframes arrow-down {
+  0% {
+    margin-top: -120px;
+  }
+
+  100% {
+    margin-top: 120px;
+  }
+}

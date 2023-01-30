@@ -34,7 +34,7 @@ const Navigation = ({ onCloseMenu, isOpenMenu }) => {
           </div>
           <div className="navigation__footer__email">
             <p className='navigation__footer__text'>Email</p>
-            <Link className='link navigation__footer__link' to='#'>info@dsx.agency</Link>
+            <a className='link navigation__footer__link' href='mailto:info@dsx.agency.ru'>info@dsx.agency</a>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const News = ({ isOpenMenu, openMenu, closeMenu }) => {
         <h1 className="news__title">News</h1>
         <div className="news__container">
           <div className="news__arrow__block">
-            <img className='news__arrow__img' src={arrowBottom} alt="Arrow-bottom" />
+            <img className='arrow-bottom__img' src={arrowBottom} alt="Arrow-bottom" />
           </div>
 
           <div className="news__card">

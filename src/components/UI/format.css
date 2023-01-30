@@ -1,0 +1,15 @@
+.format {
+  padding: 8px 20px 8px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 59px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.format_sorting:hover{
+  background-color: #C32037;
+  cursor: pointer;
+}

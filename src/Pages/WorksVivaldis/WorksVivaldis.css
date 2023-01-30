@@ -1,0 +1,75 @@
+.works-vivaldis {
+  padding-top: 100px;
+  max-width: 1920px;
+  margin: auto;
+  background-color: black;
+  color: white;
+}
+
+.works-vivaldis__container {
+  max-width: calc(100% - 120px);
+  margin: auto;
+}
+
+.works-vivaldis__titles__container {
+  display: flex;
+  gap: 200px;
+  padding-bottom: 250px;
+}
+
+.works-vivaldis__title {
+  max-width: 704px;
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 115px;
+  letter-spacing: -0.02em;
+}
+
+.works-vivaldis__title_red {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #C32037;
+}
+
+.works-vivaldis__title, span {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.works-vivaldis__format {
+  display: flex;
+}
+
+.works-vivaldis__info {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.works-vivaldis__info__text {
+  max-width: 767px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.works-vivaldis__info__arrow-img {
+  right: 0;
+}
+
+.works-vivaldis__imgOne{
+  padding-top: 200px;
+}
