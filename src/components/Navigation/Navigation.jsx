@@ -1,8 +1,10 @@
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 /* import arrow from '../../images/footerArrow.svg' */
 import closeMenu from '../../images/closeMenu.svg';
 
 const Navigation = ({ onCloseMenu, isOpenMenu }) => {
+
   return (
     <div onClick={(Event) => {
       if (Event.target.className === 'navigation navigation_open') {
@@ -17,7 +19,7 @@ const Navigation = ({ onCloseMenu, isOpenMenu }) => {
           <img onClick={() => onCloseMenu()} className='header__menu_img' src={closeMenu} alt="Menu" />
         </div>
         <nav className="navigation__nav">
-          <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/works">Works</NavLink>
+          <NavLink onClick={() => { onCloseMenu(); }} className="link navigation__nav__link" to="/works">Works</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/news">News</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/about">About us</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/contact">Contact</NavLink>

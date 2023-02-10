@@ -14,6 +14,10 @@
   margin: auto;
 }
 
+.header__logo_invert{
+  filter: invert(1);
+}
+
 .header__lenguich {
   display: flex;
   justify-content: space-between;
@@ -31,6 +35,10 @@
   margin-left: 104px;
 }
 
+.header__lenguich__text_black{
+  color: black;
+}
+
 .header__menu {
   display: flex;
   align-items: center;
@@ -42,6 +50,7 @@
 
 .header__button {
   margin-right: 37px;
+  padding: 10px 20px 10px 20px;
 }
 
 .header, .aumiInfo {
@@ -54,3 +63,6 @@
 .header_bg {
   background-image: none;
 }
+.header_bg-erroe {
+  background: none;
+} 

@@ -6,15 +6,12 @@ import Work from "../Work/Work";
 import Comments from "../Comments/Comments";
 import AumiForm from "../AumiForm/AumiForm";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
-const Main = ({ isOpenMenu, openMenu, closeMenu }) => {
+const Main = () => {
   return (
     <>
-      <Header
-        isOpenMenu={isOpenMenu}
-        openMenu={openMenu}
-        closeMenu={closeMenu}
-      />
+      <Header />
       <AumiInfo />
       <Creative />
       <Slider />
@@ -22,6 +19,7 @@ const Main = ({ isOpenMenu, openMenu, closeMenu }) => {
       <Work />
       <Comments />
       <AumiForm />
+      <Footer />
     </>
   );
 }

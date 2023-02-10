@@ -5,16 +5,13 @@ import worcksKerpich from '../../images/worcksKerpich.png';
 import bunka from '../../images/bunka.png';
 import worksBunkaBig from '../../images/worksBunkaBig.png';
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
-const Works = ({ isOpenMenu, openMenu, closeMenu }) => {
+const Works = () => {
+
   return (
     <>
-      <Header
-        isOpenMenu={isOpenMenu}
-        openMenu={openMenu}
-        closeMenu={closeMenu}
-        class={'header_bg'}
-      />
+      <Header/>
       <section className="works">
         <div className="works__container">
           <div className={`works__titles`}>
@@ -94,6 +91,7 @@ const Works = ({ isOpenMenu, openMenu, closeMenu }) => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

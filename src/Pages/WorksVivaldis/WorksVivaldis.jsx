@@ -1,16 +1,12 @@
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import arrowBottom from "../../images/arrowBottom.svg";
 import imgOne from "../../images/works-vivaldis/imgOne.png";
 
-const WorksVivaldis = ({ isOpenMenu, openMenu, closeMenu }) => {
+const WorksVivaldis = () => {
   return (
     <>
-      <Header
-        isOpenMenu={isOpenMenu}
-        openMenu={openMenu}
-        closeMenu={closeMenu}
-        class={'header_bg'}
-      />
+      <Header />
       <section className="works-vivaldis">
         <div className="works-vivaldis__container">
           <div className="works-vivaldis__titles__container">
@@ -27,6 +23,7 @@ const WorksVivaldis = ({ isOpenMenu, openMenu, closeMenu }) => {
           <img className="works-vivaldis__imgOne" src={imgOne} alt="imgOne" />
         </div>
       </section>
+      <Footer />
     </>
   );
 }

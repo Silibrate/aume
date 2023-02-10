@@ -20,7 +20,8 @@ const AumiForm = () => {
         viewport={{ amount: 0.4, once: true }}
         className="aumiForm__container">
         <div className="block block_form">
-          <motion.h2 variants={animation} className="aumiForm__title">Let's make a winning team</motion.h2>
+          <div className="block"> <motion.h2 variants={animation} custom={1} className="aumiForm__title">Let's make a </motion.h2></div>
+          <motion.h2 variants={animation} custom={2} className="aumiForm__title"> winning team</motion.h2>
         </div>
         <form className="aumiForm__form" action="submit">
           <input className="aumiForm__form__input" required placeholder="First name *" type="text" />

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import worksArrow from '../../images/worksArrow.svg';
 import Header from '../../components/Header/Header';
+import Footer from "../../components/Footer/Footer";
 import overview from '../../images/news-finalist/overview.png';
 import arrowTop from '../../images/arrowTop.svg';
 import newsFinalistImpress from '../../images/news-finalist/newsFinalistImpress.png';
@@ -10,15 +11,10 @@ import newsFinalistSolution from '../../images/news-finalist/newsFinalistSolutio
 import newsFinalistProduct from '../../images/news-finalist/newsFinalistProduct.png';
 import newsFinalistCompetitors from '../../images/news-finalist/newsFinalistCompetitors.png';
 
-const NewsFinalist = ({ isOpenMenu, openMenu, closeMenu }) => {
+const NewsFinalist = () => {
   return (
     <>
-      <Header
-        isOpenMenu={isOpenMenu}
-        openMenu={openMenu}
-        closeMenu={closeMenu}
-        class={'header_bg'}
-      />
+      <Header />
 
       <section className="finalist">
         <div className="finalist__container">
@@ -119,6 +115,7 @@ const NewsFinalist = ({ isOpenMenu, openMenu, closeMenu }) => {
             </Link>
           </div>
       </section>
+      <Footer/>
     </>
   );
 }

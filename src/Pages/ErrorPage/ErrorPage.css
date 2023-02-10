@@ -1,0 +1,56 @@
+.errorPage {
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 470px;
+}
+
+.errorPage__title {
+  margin: 0;
+  padding-top: 100px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 128px;
+  letter-spacing: -0.01em;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.errorPage__subtitle {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.errorPage__link {
+  margin-top: 62px;
+}
+
+.errorPage__img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width:544px) {
+  .errorPage__title{
+    font-size: 22vw;
+  }
+  .errorPage__subtitle{
+    font-size: 4vw;
+  }
+}

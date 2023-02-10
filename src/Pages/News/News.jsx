@@ -1,17 +1,13 @@
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
+import Footer from "../../components/Footer/Footer";
 import arrowBottom from '../../images/arrowBottom.svg';
 
-const News = ({ isOpenMenu, openMenu, closeMenu }) => {
+const News = () => {
 
   return (
     <>
-      <Header
-        isOpenMenu={isOpenMenu}
-        openMenu={openMenu}
-        closeMenu={closeMenu}
-        class={'header_bg'}
-      />
+      <Header />
       <section className="news">
         <h1 className="news__title">News</h1>
         <div className="news__container">
@@ -49,6 +45,7 @@ const News = ({ isOpenMenu, openMenu, closeMenu }) => {
 
         </div>
       </section>
+      <Footer />
     </>
   );
 }
