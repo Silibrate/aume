@@ -141,7 +141,10 @@ const Comments = () => {
         <motion.p variants={animationOpacityFast} className='comments__text comments__text_bottom'>Would you like to have award winning site or unique branding style, please say hi to our manager — aumi.digital@gmail.com. And we will help you with the pleasure.</motion.p>
       </motion.div>
 
-      <button className='comments__button__about button'>More about us</button>
+      <form action="/about-us">
+        <button className='comments__button__about button'>More about us</button>
+      </form>
+      
     </section>
   );
 }

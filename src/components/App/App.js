@@ -4,6 +4,7 @@ import Works from "../../Pages/Works/Works";
 import WorksVivaldis from "../../Pages/WorksVivaldis/WorksVivaldis";
 import News from "../../Pages/News/News";
 import NewsFinalist from "../../Pages/NewsFinalist/NewsFinalist";
+import AboutUs from "../../Pages/AboutUs/AboutUs";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 
 
@@ -12,6 +13,8 @@ function App() {
     <div className={`App`}>
       <Routes>
         <Route path='/' element={<Main />} />
+
+        <Route path='/about-us' element={<AboutUs />} />
 
         <Route path='/works' element={<Works />} />
 

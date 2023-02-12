@@ -16,6 +16,7 @@ const Header = () => {
     '/works-vivaldis': '/works-vivaldis',
     '/news': '/news',
     '/news-finalist': '/news-finalist',
+    '/about-us': '/about-us',
   }
 
   const openMenu = () => {

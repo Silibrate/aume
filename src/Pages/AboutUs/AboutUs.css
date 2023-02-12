@@ -1,0 +1,165 @@
+.aboutUs {
+  background-color: black;
+  padding-top: 250px;
+  color: #FFFFFF;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.aboutUs__titles {
+  max-width: calc(100% - 120px);
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 286px;
+}
+
+.aboutUs__titles::after {
+  left: 27%;
+  top: 52%;
+  position: absolute;
+  content: '';
+  width: 56%;
+  height: 1px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.aboutUs__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: -0.01em;
+}
+
+.aboutUs__title_left {
+  max-width: 520px;
+  align-self: flex-start;
+}
+
+.aboutUs__title_right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  max-width: 464px;
+  align-self: flex-end;
+}
+
+.aboutUs__title_right span {
+  flex: 1 auto;
+}
+
+.aboutUs__titles__img {
+  max-width: 100%;
+  position: absolute;
+  left: 41%;
+  top: -48%;
+  z-index: 10;
+}
+
+.aboutUs__text {
+  max-width: 535px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  align-self: center;
+  padding-top: 500px;
+  margin: auto;
+}
+
+.aboutUs__img__team {
+  max-width: 100%;
+  max-height: 991px;
+  padding-top: 300px;
+  padding-bottom: 130px;
+}
+
+.aboutUs__expertise {
+  max-width: calc(100% - 120px);
+  margin: auto;
+}
+
+.aboutUs__expertise__title {
+  margin: 0;
+  margin-bottom: 80px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 301px;
+  line-height: 301px;
+  letter-spacing: -0.01em;
+}
+
+.aboutUs__expertise__info {
+  position: relative;
+  border-top: 1px solid rgb(59, 59, 59);
+  padding-top: 40px;
+  display: flex;
+  padding-bottom: 367px;
+}
+
+.aboutUs__expertise__info::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  height: 75%;
+  top: 30px;
+  width: 1px;
+  background-color: rgb(59, 59, 59);
+}
+
+.aboutUs__expertise__info__left {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.aboutUs__expertise__info__title {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.aboutUs__expertise__info__left__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutUs__expertise__info__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  max-width: 411px;
+}
+
+.aboutUs__expertise__info__right {
+  padding-left: 30px;
+  width: 50%;
+}
+
+.aboutUs__expertise__info__text_right {
+  max-width: 655px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUs__expertise__info__text_right:last-child {
+  margin-top: 29px;
+}
+
+.aboutUs__expertise__info__text_right span {
+  flex: 1 auto;
+  text-align: right;
+}

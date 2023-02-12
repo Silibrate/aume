@@ -1,6 +1,4 @@
-import { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
-/* import arrow from '../../images/footerArrow.svg' */
+import { Link, NavLink } from "react-router-dom";
 import closeMenu from '../../images/closeMenu.svg';
 
 const Navigation = ({ onCloseMenu, isOpenMenu }) => {
@@ -21,7 +19,7 @@ const Navigation = ({ onCloseMenu, isOpenMenu }) => {
         <nav className="navigation__nav">
           <NavLink onClick={() => { onCloseMenu(); }} className="link navigation__nav__link" to="/works">Works</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/news">News</NavLink>
-          <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/about">About us</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/about-us">About us</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/contact">Contact</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/services">Services</NavLink>
         </nav>
