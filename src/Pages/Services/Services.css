@@ -1,0 +1,117 @@
+.services {
+  padding-top: 77px;
+  max-width: 1920px;
+  margin: auto;
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.services__titles {
+  max-width: calc(100% - 120px);
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 18vw;
+}
+
+.services__titles::after {
+  left: 17%;
+  top: 53%;
+  position: absolute;
+  content: '';
+  width: 62%;
+  height: 1px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.services__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.4vw;
+  line-height: 5.8vw;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.services__title_left {
+  max-width: 770px;
+  align-self: flex-start;
+}
+
+.services__title_left span {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+}
+
+.services__title_right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  max-width: 464px;
+  align-self: flex-end;
+}
+
+.services__title_right span {
+  flex: 1 auto;
+}
+
+.services__nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 300px;
+  border-bottom: 1px solid rgb(92, 92, 92);
+}
+
+.services__nav__link {
+  border-top: 1px solid rgb(92, 92, 92);
+  display: flex;
+  max-height: 265px;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.3s linear;
+}
+
+.services__nav__link:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.services__nav__link__titles {
+  margin-left: 60px;
+}
+
+.services__nav__link__title {
+  margin: 0;
+  font-style: normal;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 58px;
+  letter-spacing: -0.01em;
+}
+
+.services__nav__link__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.services__nav__link__img {
+  opacity: 0;
+  margin-top: 7px;
+  display: block;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
+.services__nav__link:hover .services__nav__link__img {
+  opacity: 1;
+}

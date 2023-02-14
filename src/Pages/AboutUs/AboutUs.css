@@ -129,6 +129,10 @@
   opacity: 0.6;
 }
 
+.aboutUs__expertise__info__title_bottom {
+  margin-bottom: -10px;
+}
+
 .aboutUs__expertise__info__left__block {
   display: flex;
   justify-content: space-between;
@@ -162,4 +166,66 @@
 .aboutUs__expertise__info__text_right span {
   flex: 1 auto;
   text-align: right;
+}
+
+.aboutUs__expertise__info__text_main {
+  padding-bottom: 150px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 5.4vw;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.aboutUs__expertise__info__text_main span {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+}
+
+.aboutUs__expertise__comment {
+  max-width: 57%;
+  margin-left: auto;
+  padding-bottom: 220px;
+}
+
+.aboutUs__expertise__comment__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2vw;
+ line-height: 3.6vw;
+  letter-spacing: -0.01em;
+}
+
+.aboutUs__expertise__comment__text span {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  text-align: right;
+}
+
+.aboutUs__expertise__comment__user {
+  padding-top: 88px;
+  display: flex;
+  gap: 25px;
+}
+
+.aboutUs__expertise__comment__user__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+}
+
+.aboutUs__expertise__comment__user__about {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.4;
 }

@@ -17,6 +17,8 @@ const Header = () => {
     '/news': '/news',
     '/news-finalist': '/news-finalist',
     '/about-us': '/about-us',
+    '/services': '/services',
+    '/services-brand': '/services-brand',
   }
 
   const openMenu = () => {

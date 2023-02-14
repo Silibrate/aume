@@ -1,0 +1,132 @@
+.servicesBrand {
+  position: relative;
+  padding-top: 350px;
+  max-width: 1920px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid rgb(94, 94, 94);
+}
+
+.servicesBrand__container {
+  max-width: calc(100% - 120px);
+  margin: auto;
+  display: flex;
+}
+
+.servicesBrand__block__left {
+  align-self: flex-start;
+  position: sticky;
+  top: 200px;
+  width: 60%;
+  padding-bottom: 100px;
+}
+
+.servicesBrand__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  margin-bottom: 17px;
+}
+
+.servicesBrand__block__left__title {
+  margin: 0;
+  margin-bottom: 350px;
+  max-width: 885px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.7vw;
+  line-height: 4.5vw;
+}
+
+.servicesBrand__block__left__text {
+  max-width: 496px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.servicesBrand__block__right {
+  position: relative;
+}
+
+.servicesBrand__block__right::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 200%;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(94, 94, 94);
+}
+
+.servicesBrand__block__right__text {
+  margin-left: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8vw;
+  line-height: 2.4vw;
+  letter-spacing: -0.01em;
+}
+
+.servicesBrand__block__right__info {
+  margin-top: 120px;
+  margin-left: 30px;
+}
+
+.servicesBrand__block__right__info__case {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  margin-bottom: 23px;
+}
+
+.servicesBrand__block__right__info__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 90px;
+}
+
+.servicesBrand__block__right__info__img:nth-child(2) {
+  margin-top: 0;
+}
+
+.servicesBrand__block__right__info__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  margin-top: 35px;
+}
+
+.servicesBrand__block__right__info__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  opacity: 0.6;
+  max-width: 268px;
+}
+
+.servicesBrand__block__right__info__link {
+  color: #FFFFFF;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #C32037;
+  margin: auto;
+  margin-top: 112px;
+  margin-bottom: 240px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

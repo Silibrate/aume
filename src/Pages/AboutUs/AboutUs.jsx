@@ -1,7 +1,10 @@
 import Header from "../../components/Header/Header";
+import Progress from "../../components/Progress/Progress";
+import AumiForm from "../../components/AumiForm/AumiForm";
 import Footer from "../../components/Footer/Footer";
 import aboutUs from '../../images/aboutUs/aboutUs.png';
 import aboutUsTeam from '../../images/aboutUs/aboutUsTeam.png';
+import aboutUsUser from '../../images/aboutUs/aboutUsUser.png';
 
 const AboutUs = () => {
   return (
@@ -33,8 +36,26 @@ const AboutUs = () => {
               <p className="aboutUs__expertise__info__text aboutUs__expertise__info__text_right">Outstaffing, Time&Material, Fixed price and Retainer.</p>
             </div>
           </div>
+          <p className="aboutUs__expertise__info__title aboutUs__expertise__info__title_bottom">Accents</p>
+          <p className="aboutUs__expertise__info__text_main"><span>Design and technology —</span> are just tools for solving business problems. The result of our work — is a product made on time and within the expectations of the customer.</p>
+
+
+          <div className="aboutUs__expertise__comment">
+            <p className="aboutUs__expertise__info__title aboutUs__expertise__info__title_bottom">Accents</p>
+            <p className="aboutUs__expertise__comment__text"> <span>We are responsible for</span> the quality of our projects. We provide technical and analytical support. We are proud of every case.</p>
+            <div className="aboutUs__expertise__comment__user">
+              <img className="aboutUs__expertise__comment__user__img" src={aboutUsUser} alt="User" />
+              <div className="aboutUs__expertise__comment__user__info">
+                <p className="aboutUs__expertise__comment__user__name">Roland Citajevs</p>
+                <p className="aboutUs__expertise__comment__user__about">Ceo-Founder</p>
+              </div>
+            </div>
+          </div>
         </div>
+
       </section>
+      <Progress />
+      <AumiForm />
       <Footer />
     </>
   );
