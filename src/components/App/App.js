@@ -7,6 +7,7 @@ import NewsFinalist from "../../Pages/NewsFinalist/NewsFinalist";
 import Services from "../../Pages/Services/Services";
 import ServicesBrand from "../../Pages/ServicesBrand/ServicesBrand";
 import AboutUs from "../../Pages/AboutUs/AboutUs";
+import Process from "../../Pages/Process/Process";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 
 
@@ -25,10 +26,12 @@ function App() {
         <Route path="/news" element={<News />} />
 
         <Route path='/news-finalist' element={<NewsFinalist />} />
-        
+
         <Route path='/services' element={<Services />} />
 
         <Route path='/services-brand' element={<ServicesBrand />} />
+
+        <Route path='/process' element={<Process />} />
 
         <Route path="*" element={<ErrorPage />}></Route>
 

@@ -17,11 +17,12 @@ const Navigation = ({ onCloseMenu, isOpenMenu }) => {
           <img onClick={() => onCloseMenu()} className='header__menu_img' src={closeMenu} alt="Menu" />
         </div>
         <nav className="navigation__nav">
-          <NavLink onClick={() => { onCloseMenu(); }} className="link navigation__nav__link" to="/works">Works</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/news">News</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/about-us">About us</NavLink>
-          <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/contact">Contact</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/services">Services</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/process">Process</NavLink>
+          <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/contact">Contact</NavLink>
+         
         </nav>
         <div className="navigation__footer">
           <div className="navigation__footer__socials">
