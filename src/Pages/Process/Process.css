@@ -26,8 +26,14 @@
   line-height: 171px;
 }
 
-.process__title span {
+.process__title_on {
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.process__title_off {
   color: rgba(255, 255, 255, 0.36);
+  transition: all 0.3s linear;
 }
 
 .switch {
@@ -130,7 +136,7 @@ input:checked+.sliderMVP:before {
   position: absolute;
   content: '';
   width: 1px;
-  height: 70%;
+  height: 55%;
   background-color: rgb(90, 90, 90);
   right: 53px;
   top: 0;
@@ -165,4 +171,323 @@ input:checked+.sliderMVP:before {
 
 .process__info__card__text:nth-child(4) {
   text-align: right;
+}
+
+.process__block__text {
+  padding-top: 138px;
+  max-width: 1190px;
+  margin-left: auto;
+}
+
+.process__block__text_left {
+  margin-right: auto;
+  margin-left: initial;
+  padding-top: 220px;
+}
+
+.process__block__text_pt0 {
+  padding-top: 0;
+}
+
+.process__block__text_mw1656 {
+  min-width: 1656px;
+}
+
+.process__block__text_mw961 {
+  max-width: 961px;
+}
+
+.process__block__text_mw807 {
+  max-width: 807px;
+}
+
+.process__block__text_mw773 {
+  max-width: 773px;
+}
+
+.process__subtitle {
+  font-style: normal;
+  margin-bottom: -10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.process__text {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -0.01em;
+}
+
+.process__text_fs96 {
+  font-size: 96px;
+  line-height: 106px;
+}
+
+.process__text span {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  text-align: right;
+}
+
+.process__text_smal {
+  margin-top: 66px;
+  max-width: 539px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.process__text_smal_mw323 {
+  max-width: 323px;
+}
+
+.process__text_smal_mw415 {
+  max-width: 415px;
+}
+
+.process__tasks {
+  padding-bottom: 220px;
+}
+
+.process__tasks__title {
+  margin: 0;
+  padding-top: 220px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 256px;
+  line-height: 307px;
+  letter-spacing: -0.01em;
+}
+
+.process__tasks__enumeration {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid rgb(90, 90, 90);
+  padding-bottom: 46px;
+  margin-bottom: 46px;
+}
+
+.process__tasks__enumeration_first {
+  padding-top: 90px;
+}
+
+.process__tasks__enumeration_last {
+  border-bottom: none;
+  padding-bottom: 220px;
+  margin-bottom: 0px;
+}
+
+.process__tasks__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #FFFFFF;
+  position: relative;
+  height: 1048px;
+  margin-bottom: 220px;
+}
+
+.process__tasks__link::after {
+  visibility: hidden;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)
+}
+
+.process__tasks__link:hover::after {
+  visibility: visible;
+}
+
+.process__tasks__link__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.process__tasks__link__subtitle {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  opacity: 0.46;
+  z-index: 10;
+  padding-left: 40px;
+}
+
+.process__tasks__link__title {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 88px;
+  line-height: 123px;
+  letter-spacing: -0.01em;
+  z-index: 10;
+  padding-bottom: 55px;
+  padding-left: 40px;
+}
+
+.process__tasks__development {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(90, 90, 90);
+  padding-bottom: 220px;
+  padding-top: 40px;
+  margin-top: 97px;
+}
+
+.process__tasks__development__card {
+  max-width: 530px;
+}
+
+.process__tasks__development__card__title {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.process__tasks__development__card__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.01em;
+}
+
+.process__why {
+  background-color: white;
+  color: #000000;
+  padding-bottom: 80px;
+}
+
+.process__why__title {
+  margin: 0;
+  padding-top: 46px;
+  padding-bottom: 36px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 141px;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid black;
+}
+
+.process__why__cards {
+  display: flex;
+  gap: 30px;
+  padding-top: 36px;
+
+}
+
+.process__why__card {
+  max-width: 275px;
+}
+
+.process__why__card__number {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 123px;
+  height: 123px;
+}
+
+.process__why__card__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+}
+
+.process__price {
+  padding-bottom: 220px;
+}
+
+.process__price__title {
+  margin: 0;
+  margin-bottom: 36px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 141px;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.process__price__container {
+  display: flex;
+  padding-left: 30px;
+
+}
+
+.process__price__text {
+  padding-right: 390px;
+  max-width: 514px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.process__price__comment {
+  border-left: 1px solid rgb(90, 90, 90);
+  padding-left: 30px;
+}
+
+.process__price__comment__user {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.process__price__comment__user__img {
+  margin-right: 25px;
+}
+
+.process__price__comment__user__info__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+}
+
+.process__price__comment__user__info__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.4;
 }

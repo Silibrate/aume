@@ -22,7 +22,7 @@ const Navigation = ({ onCloseMenu, isOpenMenu }) => {
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/services">Services</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/process">Process</NavLink>
           <NavLink onClick={() => onCloseMenu()} className="link navigation__nav__link" to="/contact">Contact</NavLink>
-         
+
         </nav>
         <div className="navigation__footer">
           <div className="navigation__footer__socials">
