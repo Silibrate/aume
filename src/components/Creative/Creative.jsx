@@ -47,7 +47,7 @@ const Creative = () => {
         <motion.div
           className="block"><motion.p custom={11} variants={animation} className="creative__title creative__title_one">CREATIVE</motion.p></motion.div>
         <motion.p custom={12} variants={animation} className="creative__title creative__title_two">DESIGN</motion.p>
-        <button className="creative__button button">Get to know us</button>
+        <button className="button creative__button">Get to know us</button>
       </motion.div>
     </section >
   );

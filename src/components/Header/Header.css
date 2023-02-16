@@ -14,7 +14,7 @@
   margin: auto;
 }
 
-.header__logo_invert{
+.header__logo_invert {
   filter: invert(1);
 }
 
@@ -35,7 +35,7 @@
   margin-left: 104px;
 }
 
-.header__lenguich__text_black{
+.header__lenguich__text_black {
   color: black;
 }
 
@@ -57,12 +57,47 @@
   background-image: url('../../images/fonarik.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-size: cover;
 }
 
 .header_bg {
   background-image: none;
 }
+
 .header_bg-erroe {
   background: none;
-} 
+}
+
+@media screen and (max-width:768px) {
+  .header__container {
+    max-width: calc(100% - 60px);
+  }
+
+  .header__lenguich__text {
+    margin-left: 2em;
+  }
+}
+
+@media screen and (max-width:522px) {
+  .header__button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:445px) {
+  .header__logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header__button {
+    padding: 5px 10px 5px 10px;
+    margin-right: 14px;
+  }
+}
+
+@media screen and (max-width:356px){
+  .header__button{
+    font-size: 10px;
+  }
+}

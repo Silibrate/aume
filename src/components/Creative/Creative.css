@@ -57,7 +57,6 @@
 }
 
 .line {
-  width: 90%;
   height: 1px;
   background-color: #626262;
   transition: all 1s cubic-bezier(.39, 0, .16, .94);
@@ -67,9 +66,78 @@
 @media screen and (max-width:1919px) {
   .creative__title {
     font-size: 20vw;
+    line-height: 20vw;
   }
 }
 
-.test {
-  overflow: hidden;
+@media screen and (max-width:1876px) {
+  .creative__text {
+    font-size: 1.5vw;
+    width: 100%;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width:1380px) {
+  .creative__text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width:1294px) {
+  .creative__button {
+    right: 0;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .creative {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  .creative__title {
+    font-size: 140px;
+  }
+}
+
+@media screen and (max-width:770px) {
+  .creative__container {
+    max-width: calc(100% - 60px);
+  }
+
+  .creative__title {
+    font-size: 16vw;
+    line-height: 15vw;
+  }
+
+  .creative__button {
+    padding: 7px 17px 7px 17px;
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .creative__button{
+    font-size: 10px;
+    padding: 3px 13px 3px 12px;
+  }
+
+  .creative__text{
+    font-size: 16px;
+  }
+
+  .line{
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width:375px){
+  .creative__title_one{
+    margin-top: 20px;
+  }
+
+  .creative__button{
+    font-size: 8px;
+  }
 }
