@@ -107,3 +107,39 @@
   opacity: 0.4;
   transition: all 0.3s cubic-bezier(.39, 0, .16, .94);
 }
+
+@media screen and (max-width:580px) {
+
+  .comments {
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+
+  .comments__container {
+    margin-left: 10px;
+  }
+
+  .comments__contents {
+    flex-direction: column;
+  }
+
+  .comments__content {
+    margin-left: 0;
+  }
+
+  .comments__content__text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 300px;
+    margin-top: 64px;
+  }
+
+  .comments__content__avtor{
+    margin-top: 60px;
+  }
+
+  .comments__content__avtor__info__about {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

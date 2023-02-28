@@ -8,6 +8,7 @@ import Services from "../../Pages/Services/Services";
 import ServicesBrand from "../../Pages/ServicesBrand/ServicesBrand";
 import AboutUs from "../../Pages/AboutUs/AboutUs";
 import Process from "../../Pages/Process/Process";
+import Contact from "../../Pages/Contact/Contact";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 
 
@@ -32,6 +33,8 @@ function App() {
         <Route path='/services-brand' element={<ServicesBrand />} />
 
         <Route path='/process' element={<Process />} />
+
+        <Route path='/contact' element={<Contact />} />
 
         <Route path="*" element={<ErrorPage />}></Route>
 

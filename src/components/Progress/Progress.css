@@ -171,6 +171,68 @@
   transition: all 0.5s cubic-bezier(.39, 0, .16, .94);
 }
 
-.block__number{
+.block__number {
   position: relative;
+}
+
+@media screen and (max-width:580px) {
+  .progress__container {
+    margin-left: 10px;
+  }
+
+  .progress__awards__title {
+    font-size: 14px;
+    line-height: 15px;
+    max-width: 221px;
+  }
+
+  .progress__awards__container {
+    padding-top: 38px;
+    gap: 32px;
+    overflow-x: scroll;
+  }
+
+  .progress__awards__card__logo__img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .progress__technology {
+    padding-top: 90px;
+  }
+
+  .progress__technology__container {
+    max-width: calc(100% - 20px);
+    flex-direction: column;
+  }
+
+  .progress__technology__info {
+    margin-left: 0;
+    padding-top: 28px;
+  }
+
+  .progress__technology__info__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .progress__technology__info__number_100 {
+    font-size: 71px;
+    line-height: 64px;
+  }
+
+  .line_number {
+    bottom: 35px;
+  }
+
+  .progress__technology__info__number__text {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 13px;
+  }
+
+  .progress__technology__info__number_small {
+    font-size: 46px;
+    line-height: 41px;
+  }
 }

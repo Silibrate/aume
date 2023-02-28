@@ -13,8 +13,8 @@ const WorksVivaldis = () => {
           <div className="works-vivaldis__titles__container">
             <h2 className="works-vivaldis__title"><span className="works-vivaldis__title_red">©2021</span><span>Vivaldis</span>payroll</h2>
             <div className="works-vivaldis__format">
-              <p className="format">UX/UI</p>
-              <p className="format">3D</p>
+              <p className="format works-vivaldis__format_mobile">UX/UI</p>
+              <p className="format works-vivaldis__format_mobile">3D</p>
             </div>
           </div>
           <div className="works-vivaldis__info">

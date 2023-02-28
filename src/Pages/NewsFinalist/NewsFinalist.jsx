@@ -104,18 +104,18 @@ const NewsFinalist = () => {
 
           </div>
         </div>
-        <div className="news__card">
-            <Link onClick={'scroll:0'} className='news__card__link' to='/news'>
-              <p className="news__subtitle news__subtitle_one">More news</p>
-            </Link>
-          </div>  <div className="news__card">
-            <Link onClick={'scroll:0'} className='news__card__link' to='#'>
-              <p className="news__date">May 2, 2022</p>
-              <p className="news__subtitle">RocketAir expands leadership team, now majority women-led</p>
-            </Link>
-          </div>
+        <div className="finalist__news__card">
+          <Link onClick={'scroll:0'} className='finalist__news__card__link finalist__news__card__link__more' to='/news'>
+            <p className="finalist__news__subtitle finalist__news__subtitle_big ">More news</p>
+          </Link>
+        </div>  <div className="finalist__news__card">
+          <Link onClick={'scroll:0'} className='news__card__link' to='#'>
+            <p className="finalist__news__subtitle">RocketAir expands leadership team, now majority women-led</p>
+            <p className="finalist__news__date">May 2, 2022</p>
+          </Link>
+        </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

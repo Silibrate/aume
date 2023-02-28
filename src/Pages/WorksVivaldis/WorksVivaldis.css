@@ -123,7 +123,7 @@
   margin-top: 30px;
 }
 
-.works-vivaldis__wordmark{
+.works-vivaldis__wordmark {
   position: relative;
   padding-top: 250px;
   display: flex;
@@ -159,17 +159,17 @@
   opacity: 0.7;
 }
 
-.works-vivaldis__wordmark__info__right{
+.works-vivaldis__wordmark__info__right {
   display: flex;
   flex-direction: column;
 }
 
-.works-vivaldis__wordmark__ing{
+.works-vivaldis__wordmark__ing {
   max-width: 100%;
   margin-bottom: 60px;
 }
 
-.works-vivaldis__wordmark__info__right__block{
+.works-vivaldis__wordmark__info__right__block {
   max-width: 596px;
 }
 
@@ -190,4 +190,118 @@
   letter-spacing: 0.01em;
   color: #FFFFFF;
   opacity: 0.7;
+}
+
+@media screen and (max-width:568px) {
+
+  .works-vivaldis {
+    padding-top: 70px;
+  }
+
+  .works-vivaldis__container {
+    max-width: calc(100% - 20px);
+  }
+
+  .works-vivaldis__titles__container {
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  .works-vivaldis__title {
+    font-size: 69px;
+    line-height: 62px;
+    position: relative;
+    max-width: 230px;
+    order: 2;
+  }
+
+  .works-vivaldis__title_red {
+    font-size: 13px;
+    line-height: 12px;
+    position: absolute;
+    bottom: 0px;
+    left: 210px;
+    max-width: 60px;
+  }
+
+  .works-vivaldis__titles__container {
+    gap: 25px;
+  }
+
+  .works-vivaldis__format {
+    order: 1;
+  }
+
+  .works-vivaldis__format_mobile {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 4px 35px 4px 35px;
+  }
+
+  .works-vivaldis__info__arrow-img {
+    display: none;
+  }
+
+  .works-vivaldis__info__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .works-vivaldis__imgOne {
+    padding-top: 40px;
+  }
+
+  .works-vivaldis__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 32px;
+  }
+
+  .works-vivaldis__block__text {
+    margin-right: 0;
+  }
+
+  .works-vivaldis__block__text__title {
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 64px;
+    margin-bottom: 16px;
+  }
+
+  .works-vivaldis__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .works-vivaldis__wordmark {
+    padding-top: 32px;
+    flex-direction: column;
+  }
+
+  .works-vivaldis__wordmark__info__left {
+    position: relative;
+    padding-top: 20px;
+  }
+
+  .works-vivaldis__wordmark__info__left__title {
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 32px;
+  }
+
+  .works-vivaldis__wordmark__info__left__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .works-vivaldis__wordmark__info__right__block__title {
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 32px;
+  }
+
+  .works-vivaldis__wordmark__info__right__block__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

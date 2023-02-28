@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import covichki from '../../images/covichki.svg';
 import nextWhite from '../../images/nextWhite.svg';
 import prevWhite from '../../images/prevWhite.svg';
@@ -50,11 +49,7 @@ const Comments = () => {
 
   return (
     <section className="comments">
-      <motion.div
-        initial='hidden'
-        whileInView='visible'
-        viewport={{ amount: 0.8, once: true }}
-        className="comments__container">
+      <div className="comments__container">
         <div className="comments__contents">
           <div className="comments__buttons">
             <img className='comments__buttons__img' src={covichki} alt="Covichki" />
@@ -62,25 +57,22 @@ const Comments = () => {
             <button onClick={() => nextComment()} className="comments__button comments__button__next"><img className='comments__button__img' src={nextWhite} alt="Next" /></button>
           </div>
 
-          <motion.div
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: false }}
-            className={`comments__content ${comment === 1 ? "comments__content_active" : ""}`}>
-            <div className="block"><motion.p custom={1} variants={animation} className="comments__content__text">I am pleased to recommend Vide Infra, we have assigned to this</motion.p></div>
-            <div className="block"><motion.p custom={2} variants={animation} className="comments__content__text">company already two projects and they was accomplished perfect — I</motion.p></div>
-            <div className="block"><motion.p custom={3} variants={animation} className="comments__content__text">like their organization of work, their initiative and support, and that they</motion.p></div>
-            <div className="block"><motion.p custom={4} variants={animation} className="comments__content__text">provide assistance after the project is completed. We are satisfied of</motion.p></div>
-            <div className="block"><motion.p custom={5} variants={animation} className="comments__content__text">particular service provided by Vide Infra and we will be glad to continue</motion.p></div>
-            <div className="block"><motion.p custom={6} variants={animation} className="comments__content__text">our cooperation in the future.</motion.p></div>
+          <div className={`comments__content ${comment === 1 ? "comments__content_active" : ""}`}>
+            <p className="comments__content__text">I am pleased to recommend Vide Infra, we have assigned to this
+              company already two projects and they was accomplished perfect — I
+              like their organization of work, their initiative and support, and that they
+              provide assistance after the project is completed. We are satisfied of
+              particular service provided by Vide Infra and we will be glad to continue
+              our cooperation in the future.
+            </p>
             <div className="comments__content__avtor">
-              <motion.img variants={animationOpacityImg} className='comments__content__avtor__img' src={liixxx} alt="Avtor" />
+              <img variants={animationOpacityImg} className='comments__content__avtor__img' src={liixxx} alt="Avtor" />
               <div className="comments__content__avtor__info">
-                <div className="block"> <motion.p custom={1} variants={animation} className="comments__content__avtor__info__name">Silibrate SiberSport</motion.p></div>
-                <div className="block">  <motion.p custom={2} variants={animation} className="comments__content__avtor__info__about">FPS player overwatch 2</motion.p></div>
+                <p className="comments__content__avtor__info__name">Silibrate SiberSport</p>
+                <p className="comments__content__avtor__info__about">FPS player overwatch 2</p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           <div className={`comments__content ${comment === 2 ? "comments__content_active" : ""}`}>
             <p className="comments__content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, ut dolor. Eaque dicta molestiae illo dignissimos enim? Fuga, commodi non blanditiis voluptates dicta placeat, perferendis ducimus enim assumenda earum odio!</p>
@@ -105,8 +97,8 @@ const Comments = () => {
             </div>
           </div>
         </div>
-      </motion.div>
-    </section>
+      </div>
+    </section >
   );
 }
 

@@ -14,11 +14,7 @@
   max-width: 625px;
 }
 
-.aumiInfo__title__container{
-  overflow: hidden;
-}
-
-.aumiInfo__title__contant{
+.aumiInfo__title__contant {
   display: flex;
   overflow: hidden;
   min-height: 71px;
@@ -31,10 +27,10 @@
   font-size: 62px;
   line-height: 68px;
   letter-spacing: -0.01em;
-  transition: all 0.9s cubic-bezier(.39,0,.16,.94);
+  transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
-.aumiInfo__title_two{
+.aumiInfo__title_two {
   margin-left: 16px;
 }
 
@@ -57,72 +53,84 @@
 }
 
 @media screen and (max-width:1440px) {
-  .aumiInfo{
+  .aumiInfo {
     padding-top: 28vw;
   }
 }
 
 @media screen and (max-width:1256px) {
-  .aumiInfo__title{
+  .aumiInfo__title {
     font-size: 4vw;
     line-height: 4vw;
   }
 
-  .aumiInfo__title__contant{
+  .aumiInfo__title__contant {
     min-height: 45px;
   }
 
-  .aumiInfo__text{
+  .aumiInfo__text {
     font-size: 1.7vw;
   }
 }
 
-@media screen and (max-width:768px){
-  .aumiInfo__container{
+@media screen and (max-width:768px) {
+  .aumiInfo__container {
     padding-left: 30px;
   }
 
-  .aumiInfo__title_two{
+  .aumiInfo__title_two {
     margin-left: 10px;
   }
 
-  .aumiInfo__text{
+  .aumiInfo__text {
     max-width: 250px;
     line-height: 1.7vw;
   }
 }
 
-@media screen and (max-width:720px){
-  .aumiInfo__title__contant{
+@media screen and (max-width:720px) {
+  .aumiInfo__title__contant {
     min-height: 33px;
   }
 
-  .aumiInfo__title{
+  .aumiInfo__title {
     font-size: 34px;
     line-height: 34px;
   }
 
-  .aumiInfo__text{
+  .aumiInfo__text {
     font-size: 14px;
     line-height: 14px;
   }
 }
 
-@media screen and (max-width:480px){
-  .aumiInfo__title{
-    font-size: 26px;
-    line-height: 26px;
+@media screen and (max-width:580px) {
+  .aumiInfo__title__contant {
+    flex-direction: column;
   }
 
-  .aumiInfo__text{
-    font-size: 10px;
-    line-height: 10px;
-    max-width: 170px;
+  .aumiInfo__title_two {
+    margin-left: 0px;
+  }
+
+  .aumiInfo__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .aumiInfo__text {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 200px;
+  }
+
+  .aumiInfo{
+    padding-top: 154px;
   }
 }
 
 @media screen and (max-width:460px) {
-  .aumiInfo__button{
+  .aumiInfo__button {
     margin-top: 30px;
     padding: 10px 20px 10px 20px;
     font-size: 16px;

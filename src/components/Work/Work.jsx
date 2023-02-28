@@ -26,8 +26,8 @@ const Work = () => {
       <div className={`work__all`}>
         <div className={`work__all__container`}>
           <div className={`work__all__content`}>
-            <p className="work__all__text work__all__text_left">Take a look at what</p>
-            <p className="work__all__text work__all__text_right">we can do for you</p>
+            <p className="work__all__text work__all__text_left">Take a look at what <span className='top__line'></span></p>
+            <p className="work__all__text work__all__text_right">we can do for you <span className='bottom__line'></span></p>
           </div>
           <div className="wrapper__link  ">
           <Link onClick={'scroll:0'}  className={`work__all__link `}  to='/works'>All work</Link>

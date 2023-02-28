@@ -16,13 +16,12 @@ const Main = () => {
       <AumiInfo />
       <Creative />
       <Slider />
-  {/*    
       <Progress />
       <Work />
       <Comments />
       <About />
       <AumiForm />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

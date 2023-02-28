@@ -1,12 +1,14 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/inter.css);
-@import url(./components/App/App.css);
+
 @import url(./components/UI/button.css);
 @import url(./components/UI/block.css);
 @import url(./components/UI/link.css);
 @import url(./components/UI/newsCard.css);
 @import url(./components/UI/format.css);
 @import url(./components/UI/arrowBottom.css);
+
+@import url(./components/App/App.css);
 @import url(./components/Header/Header.css);
 @import url(./components/AumiInfo/AumiInfo.css);
 @import url(./components/About/About.css);
@@ -18,12 +20,18 @@
 @import url(./components//AumiForm/AumiForm.css);
 @import url(./components/Footer/Footer.css);
 @import url(./components/Navigation/Navigation.css);
+
 @import url(./Pages/Works/Works.css);
 @import url(./Pages/WorksVivaldis/WorksVivaldis.css);
+
 @import url(./Pages/News/News.css);
 @import url(./Pages/NewsFinalist/NewsFinalist.css);
+
 @import url(./Pages/ErrorPage/ErrorPage.css);
+
 @import url(./Pages/AboutUs/AboutUs.css);
+
 @import url(./Pages/Services/Services.css);
 @import url(./Pages/ServicesBrand/ServicesBrand.css);
+
 @import url(./Pages/Process/Process.css);

@@ -294,12 +294,34 @@
   }
 }
 
-@media screen and (max-width:570px) {
-  .slider__card__container {
-    height: 70vw;
+@media screen and (max-width:580px) {
+  .slider__container {
+    flex-direction: column;
   }
 
-  .slider {
-    padding-bottom: 100px;
+  .slider__card {
+    max-width: 100%;
+  }
+
+  .slider__card__container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: calc(100% - 20px);
+    margin: auto;
+    height: 150px;
+  }
+
+  .slider__card{
+    border-right: none;
+  }
+
+  .slider__card__title {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .slider__card_circle{
+    display: flex;
+    height: 344px;
   }
 }

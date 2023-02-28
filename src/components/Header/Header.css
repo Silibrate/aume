@@ -78,9 +78,16 @@
   }
 }
 
+@media screen and (max-width:568px) {
+  .header__container {
+    max-width: calc(100% - 20px);
+  }
+}
+
 @media screen and (max-width:522px) {
   .header__button {
     font-size: 12px;
+    padding: 5px 10px 5px 10px;
   }
 }
 
@@ -91,13 +98,12 @@
   }
 
   .header__button {
-    padding: 5px 10px 5px 10px;
     margin-right: 14px;
   }
 }
 
-@media screen and (max-width:356px){
-  .header__button{
+@media screen and (max-width:356px) {
+  .header__button {
     font-size: 10px;
   }
 }

@@ -20,6 +20,7 @@ const Header = () => {
     '/services': '/services',
     '/services-brand': '/services-brand',
     '/process': '/process',
+    '/contact': '/contact',
   }
 
   const openMenu = () => {

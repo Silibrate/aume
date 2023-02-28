@@ -5,13 +5,14 @@ import worcksKerpich from '../../images/worcksKerpich.png';
 import bunka from '../../images/bunka.png';
 import worksBunkaBig from '../../images/worksBunkaBig.png';
 import Header from "../../components/Header/Header";
+import AumiForm from "../../components/AumiForm/AumiForm";
 import Footer from "../../components/Footer/Footer";
 
 const Works = () => {
 
   return (
     <>
-      <Header/>
+      <Header />
       <section className="works">
         <div className="works__container">
           <div className={`works__titles`}>
@@ -39,13 +40,13 @@ const Works = () => {
                       <p className="format">3D</p>
                     </div>
                   </div>
-                  <Link className='button_arrow'>See in live <img className="button_arrow__img" src={worksArrow} alt="arrow" /></Link>
+                  <Link className='button_arrow works__projects__card__batton'>See in live <img className="button_arrow__img" src={worksArrow} alt="arrow" /></Link>
                 </div>
                 <p className="works__projects__card__text">Augmenteers is a platform for online retailers to increase performance with 3D product visualizations. We designed and developed a user-friendly experience that lets customers configure the product, scan the QR code and see the model in their room using AR technology. We implemented the front end of the web app in React.js.</p>
               </div>
               <div className="works__projects__card__imgs">
                 <img src={worksHome} alt="Home" className="works__projects__card__img" />
-                <img src={worksHome} alt="Home" className="works__projects__card__img" />
+                <img src={worksHome} alt="Home" className="works__projects__card__img works__projects__card__img_two" />
               </div>
             </div>
 
@@ -59,7 +60,7 @@ const Works = () => {
                       <p className="format">3D</p>
                     </div>
                   </div>
-                  <Link className='button_arrow'>See in live <img className="button_arrow__img" src={worksArrow} alt="arrow" /></Link>
+                  <Link className='button_arrow works__projects__card__batton'>See in live <img className="button_arrow__img" src={worksArrow} alt="arrow" /></Link>
                 </div>
                 <p className="works__projects__card__text">Augmenteers is a platform for online retailers to increase performance with 3D product visualizations. We designed and developed a user-friendly experience that lets customers configure the product, scan the QR code and see the model in their room using AR technology. We implemented the front end of the web app in React.js.</p>
               </div>
@@ -78,20 +79,21 @@ const Works = () => {
                       <p className="format">3D</p>
                     </div>
                   </div>
-                  <Link className='button_arrow'>See in live <img className="button_arrow__img" src={worksArrow} alt="arrow" /></Link>
+                  <Link className='button_arrow works__projects__card__batton'>See in live <img className="button_arrow__img" src={worksArrow} alt="arrow" /></Link>
                 </div>
                 <p className="works__projects__card__text">Augmenteers is a platform for online retailers to increase performance with 3D product visualizations. We designed and developed a user-friendly experience that lets customers configure the product, scan the QR code and see the model in their room using AR technology. We implemented the front end of the web app in React.js.</p>
               </div>
               <div className="works__projects__card__imgs">
                 <img src={bunka} alt="Kerpich" className="works__projects__card__img works__projects__card__img_bunka" />
-                <img src={worksBunkaBig} alt="Kerpich" className="works__projects__card__img works__projects__card__img_bunka-big" />
+                <img src={worksBunkaBig} alt="Kerpich" className="works__projects__card__img works__projects__card__img_bunka-big works__projects__card__img_two" />
               </div>
             </div>
 
           </div>
         </div>
       </section>
-      <Footer/>
+      <AumiForm />
+      <Footer />
     </>
   );
 }

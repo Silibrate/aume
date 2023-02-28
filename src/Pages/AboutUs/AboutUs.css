@@ -195,7 +195,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 3.2vw;
- line-height: 3.6vw;
+  line-height: 3.6vw;
   letter-spacing: -0.01em;
 }
 
@@ -228,4 +228,130 @@
   letter-spacing: 0.01em;
   color: #FFFFFF;
   opacity: 0.4;
+}
+
+@media screen and (max-width:568px) {
+  .aboutUs {
+    padding-top: 100px;
+  }
+
+  .aboutUs__titles {
+    max-width: calc(100% - 20px);
+    flex-direction: column;
+  }
+
+  .aboutUs__title {
+    font-size: 15vw;
+    line-height: 15vw;
+  }
+
+  .aboutUs__titles__img {
+    height: 313px;
+    position: relative;
+    order: 2;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    margin: 32px 0 32px 0;
+  }
+
+  .aboutUs__title_right {
+    order: 3;
+  }
+
+  .aboutUs__text {
+    padding-top: 64px;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .aboutUs__img__team {
+    padding-top: 32px;
+    padding-bottom: 64px;
+    height: 550px;
+    object-fit: contain;
+    max-width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+
+  .aboutUs__expertise {
+    max-width: calc(100% - 20px);
+  }
+
+  .aboutUs__expertise__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+
+  .aboutUs__expertise__info {
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  .aboutUs__expertise__info__title {
+    margin-bottom: 22px;
+  }
+
+  .aboutUs__expertise__info__left {
+    width: 100%;
+    padding-bottom: 32px;
+    padding-right: 0;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgb(59, 59, 59);
+  }
+
+  .aboutUs__expertise__info::after {
+    content: none;
+  }
+
+  .aboutUs__expertise__info__left__block {
+    flex-direction: column;
+  }
+
+  .aboutUs__expertise__info__text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .aboutUs__expertise__info__right {
+    width: 100%;
+    padding-bottom: 32px;
+    padding-left: 0;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgb(59, 59, 59);
+  }
+
+  .aboutUs__expertise__info__text_right {
+    display: block;
+  }
+
+  .aboutUs__expertise__info__text_main {
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgb(59, 59, 59);
+  }
+
+  .aboutUs__expertise__info__text_main span {
+    display: contents;
+  }
+
+  .aboutUs__expertise__comment {
+    margin-left: 0;
+    max-width: 100%;
+    padding-bottom: 52px;
+  }
+
+  .aboutUs__expertise__comment__text span {
+    display: contents;
+  }
+  .aboutUs__expertise__comment__user{
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(59, 59, 59);
+    padding-bottom: 32px;
+  }
 }
