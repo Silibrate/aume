@@ -70,6 +70,15 @@
   opacity: 0.6;
 }
 
+.navigation__nav__link_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+}
+
 .navigation__nav__link__img {
   margin-right: 14px;
   max-width: 77px;
@@ -90,6 +99,15 @@
 
 .navigation__footer__text {
   margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+
+.navigation__footer__text_ru {
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -134,39 +152,39 @@
   }
 }
 
-@media screen and (max-width:833px){
-  .navigation__footer__text{
+@media screen and (max-width:833px) {
+  .navigation__footer__text {
     font-size: 2.5vw;
   }
 
-  .navigation__footer__link{
+  .navigation__footer__link {
     font-size: 2.5vw;
     margin-top: 2vw;
     line-height: 2.5vw;
   }
 
-  .navigation__footer{
+  .navigation__footer {
     margin-left: 0;
     margin-top: 60px;
   }
 
-  .navigation__nav{
+  .navigation__nav {
     margin-left: 0;
   }
 
-  .navigation__nav__link{
+  .navigation__nav__link {
     font-size: 5vw;
     margin-top: 3vw;
     line-height: 5vw;
   }
 }
 
-@media screen and (max-width:459px){
-  .navigation__container{
+@media screen and (max-width:459px) {
+  .navigation__container {
     padding-left: 7vw;
   }
 
-  .navigation__footer__email{
+  .navigation__footer__email {
     margin-left: 20px;
   }
 }

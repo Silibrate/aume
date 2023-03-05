@@ -30,6 +30,15 @@
   transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
+.aumiInfo__title_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 68px;
+  letter-spacing: -0.01em;
+}
+
 .aumiInfo__title_two {
   margin-left: 16px;
 }
@@ -44,7 +53,16 @@
   color: #FFFFFF;
   opacity: 0.7;
   margin-top: 32px;
-  transition: all 2s linear;
+}
+
+.aumiInfo__text_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  opacity: 0.7;
 }
 
 .aumiInfo__button {
@@ -124,7 +142,7 @@
     max-width: 200px;
   }
 
-  .aumiInfo{
+  .aumiInfo {
     padding-top: 154px;
   }
 }

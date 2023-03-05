@@ -119,6 +119,11 @@
 }
 
 @media screen and (max-width:580px) {
+
+  .creative__container {
+    max-width: calc(100% - 20px);
+  }
+
   .creative__text {
     display: flex;
     flex-direction: column;

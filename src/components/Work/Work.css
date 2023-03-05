@@ -20,6 +20,7 @@
 .work__card {
   z-index: 2;
   margin-bottom: 100px;
+  max-width: fit-content;
 }
 
 .work__card__img {
@@ -111,6 +112,8 @@
   line-height: 18px;
   letter-spacing: -0.01em;
   color: #FFFFFF;
+
+  
 }
 
 .wrapper__link {
@@ -126,19 +129,14 @@
   height: 220px;
   background: #000000;
   color: #FFFFFF;
-  transition: all 0.3s linear;
   transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
 .wrapper__link:hover {
   background: #C32037;
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.2);
+  width: 260px;
+  height: 260px;
   transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
-}
-
-.wrapper__link:hover .work__all__link {
-  font-size: 17px;
 }
 
 .Work__text_bg {

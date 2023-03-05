@@ -5,7 +5,7 @@ import avtor1 from '../../images/avtor1.svg';
 import liixxx from '../../images/liixxx.jpg';
 import { useState } from 'react';
 
-const Comments = () => {
+const Comments = ({languageText}) => {
   const [comment, setComment] = useState(1);
 
   const nextComment = () => {
@@ -26,27 +26,6 @@ const Comments = () => {
 
   controlComments();
 
-
-  const animation = {
-    hidden: {
-      y: 350,
-    },
-    visible: custom => ({
-      y: 0,
-      transition: { delay: custom * 0.2 },
-    })
-  }
-
-  const animationOpacityImg = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: { duration: 1 },
-    }
-  }
-
   return (
     <section className="comments">
       <div className="comments__container">
@@ -58,18 +37,12 @@ const Comments = () => {
           </div>
 
           <div className={`comments__content ${comment === 1 ? "comments__content_active" : ""}`}>
-            <p className="comments__content__text">I am pleased to recommend Vide Infra, we have assigned to this
-              company already two projects and they was accomplished perfect — I
-              like their organization of work, their initiative and support, and that they
-              provide assistance after the project is completed. We are satisfied of
-              particular service provided by Vide Infra and we will be glad to continue
-              our cooperation in the future.
-            </p>
+            <p className="comments__content__text">{languageText('commentsContentTextOne')} </p>
             <div className="comments__content__avtor">
-              <img variants={animationOpacityImg} className='comments__content__avtor__img' src={liixxx} alt="Avtor" />
+              <img  className='comments__content__avtor__img' src={liixxx} alt="Avtor" />
               <div className="comments__content__avtor__info">
-                <p className="comments__content__avtor__info__name">Silibrate SiberSport</p>
-                <p className="comments__content__avtor__info__about">FPS player overwatch 2</p>
+                <p className="comments__content__avtor__info__name">{languageText('commentsContentAvtorInfoNameOne')}</p>
+                <p className="comments__content__avtor__info__about">{languageText('commentsContentAvtorInfoAboutOne')}</p>
               </div>
             </div>
           </div>

@@ -10,9 +10,45 @@
   letter-spacing: -0.01em;
   color: #FFFFFF;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s linear;
+}
+
+.button_ru{
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+}
+
+.button::after {
+  content: '';
+  width: 110%;
+  height: 110px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: -4px;
+  transition: all 0.3s linear;
+}
+
+.button:hover {
+  color: black;
+  background: none;
+  z-index: 30;
+}
+
+.button:hover::after {
+  top: -65%;
+  z-index: -1;
 }
 
 .button_arrow {
+  position: relative;
   max-width: 100px;
   margin-top: 30px;
   padding: 10px 20px 10px 20px;
@@ -20,8 +56,39 @@
   border: 1px solid #C32037;
   color: #FFFFFF;
   border-radius: 59px;
+  overflow: hidden;
+  transition: all .3s linear;
+}
+
+.button_arrow:hover {
+  color: black;
+  background: none;
+  z-index: 30;
+}
+
+.button_arrow::after {
+  content: '';
+  width: 110%;
+  height: 110px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: -4px;
+  transition: all 0.3s linear;
+}
+
+.button_arrow:hover::after {
+  top: -65%;
+  z-index: -1;
 }
 
 .button_arrow__img {
   margin-left: 10px;
+  transition: all 0.3s linear;
+}
+
+.button_arrow:hover .button_arrow__img {
+  filter: invert();
+  transform: rotate(81deg);
 }

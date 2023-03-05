@@ -68,10 +68,27 @@
   letter-spacing: -0.01em;
 }
 
+.aumiForm__form__checkbox {
+  margin-top: 32px;
+  width: 580px;
+}
+
+.checkbox__label{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  margin-left: 10px;
+}
+
+.checkbox__label__link{
+  color: #C32037;
+}
+
 .aumiForm__form__button {
   border: none;
   cursor: pointer;
-  margin-top: 100px;
   background: #C32037;
   width: 220px;
   height: 220px;
@@ -82,6 +99,18 @@
   line-height: 18px;
   letter-spacing: -0.01em;
   color: #FFFFFF;
+  transition: all 0.3s linear;
+}
+
+.aumiForm__form__button:hover {
+  width: 260px;
+  height: 260px;
+}
+
+.buton__wrapper {
+  width: 320px;
+  height: 270px;
+  margin-top: 100px;
 }
 
 @media screen and (max-width:580px) {

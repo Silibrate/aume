@@ -7,7 +7,7 @@ import arrowWhiteNiwsMobile from '../../images/news/arrowWhiteNiwsMobile.svg';
 import newsImgFinalist from '../../images/news/newsImgFinalist.png';
 import { useEffect, useRef } from 'react';
 
-const News = () => {
+const News = ({ languageText }) => {
   const parallax1 = useRef();
   const parallax2 = useRef();
   const parallax3 = useRef();
@@ -17,11 +17,13 @@ const News = () => {
   const blockLink3 = useRef();
   const blockLink4 = useRef();
 
-  const windowWidth = window.innerWidth;
+  console.log(languageText)
+
+  let windowWidth = window.innerWidth;
 
   useEffect(() => {
     if (windowWidth > 720) {
-      const speed = 0.05;
+      const speed = 0.25;
       let positionX = 0, positionY = 0;
       let coordXprocent = 0, coordYprocent = 0
       const parallaxEffect = () => {
@@ -32,13 +34,12 @@ const News = () => {
         positionY = positionY + (distY * speed);
 
         parallax1.current.style.cssText = `transform: translate(${positionX / 2}%,${positionY / 15}%)`;
-        parallax2.current.style.cssText = `transform: translate(${positionX / 2}%,${positionY / 15}%)`;
-        parallax3.current.style.cssText = `transform: translate(${positionX / 2}%,${positionY / 15}%)`;
-        parallax4.current.style.cssText = `transform: translate(${positionX / 2}%,${positionY / 15}%)`;
+        parallax2.current.style.cssText = `transform: translate(${positionX / 2}%,${positionY / 25}%)`;
+        parallax3.current.style.cssText = `transform: translate(${positionX / 2}%,${positionY / 35}%)`;
+        parallax4.current.style.cssText = `transform: translate(${positionX / 2}%,${positionY / 35}%)`;
 
         requestAnimationFrame(parallaxEffect);
       }
-
       blockLink1.current.addEventListener("mousemove", (e) => {
         const paralaxWidth = blockLink1.current.offsetWidth;
         const paralaxHeight = blockLink1.current.offsetHeight;
@@ -85,11 +86,13 @@ const News = () => {
 
       parallaxEffect();
     }
-  }, [])
+  }, [windowWidth])
 
   return (
     <>
-      <Header />
+      <Header
+        languageText={languageText}
+      />
       <section className="news">
         <h1 className="news__title">News</h1>
         <div className="news__container">
@@ -143,7 +146,9 @@ const News = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer
+        languageText={languageText}
+      />
     </>
   );
 }

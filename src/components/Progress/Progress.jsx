@@ -4,14 +4,14 @@ import Hackathon from '../../images/Hackathon.svg';
 import Css from '../../images/Css.svg';
 import Dprofile from '../../images/Dprofile.svg';
 
-const Progress = () => {
+const Progress = ({ languageText}) => {
 
   return (
     <section className="progress">
       <div className="progress__container">
         <div className="progress__awards">
-          <h3 className="progress__awards__title">Aumi award winning</h3>
-          <h3 className="progress__awards__title progress__awards__title_botton">creative design agency</h3>
+          <h3 className="progress__awards__title">{languageText('progressAwardsTitle')}</h3>
+          <h3 className="progress__awards__title progress__awards__title_botton">{languageText('progressAwardsTitleBotton')}</h3>
           <div className="progress__awards__container">
 
             <div className="progress__awards__card">
@@ -54,33 +54,28 @@ const Progress = () => {
       </div>
       <div className="progress__technology">
         <div className="progress__technology__container">
-          <p className='progress__technology__title'>Inspiring with design.
-            <span className='progress__technology__title_red' >Empowering through technology. </span></p>
+          <p className='progress__technology__title'>{languageText('progressTechnologyTitle')}
+            <span className='progress__technology__title_red' >{languageText('progressTechnologyTitleRed')} </span></p>
           <div className="progress__technology__info">
-            <p className="progress__technology__info__text">We are a comprehensive design and technology
-              partner for the digital age. We help businesses to
-              innovate and remain highly relevant to their customers
-              by developing cutting-edge digital products and
-              executing smart and valuable communication.
-            </p>
+            <p className="progress__technology__info__text">{languageText('progressTechnologyInfoText')} </p>
             <div className="progress__technology__info__number">
               <div className="block__number">
 
                 <p className='progress__technology__info__number_100'>100+</p>
 
                 <span className="line line_number"></span>
-                <p className='progress__technology__info__number__text'>Project’s done</p>
+                <p className='progress__technology__info__number__text'>{languageText('progressTechnologyInfoNumberTextOne')}</p>
               </div>
 
               <div className="progress__technology__info__number__conteiner">
                 <div className="progress__technology__info__number__content">
                   <p className='progress__technology__info__number_small'>5+ </p>
-                  <p className='progress__technology__info__number__text'>Years of experience </p>
+                  <p className='progress__technology__info__number__text'>{languageText('progressTechnologyInfoNumberTextTwo')} </p>
                   <span className="line line_number"></span>
                 </div>
                 <div className="progress__technology__info__number__content">
                   <p className='progress__technology__info__number_small'>10+ </p>
-                  <p className='progress__technology__info__number__text'>Team members</p>
+                  <p className='progress__technology__info__number__text'>{languageText('progressTechnologyInfoNumberTextTree')}</p>
                   <span className="line line_number"></span>
                 </div>
               </div>

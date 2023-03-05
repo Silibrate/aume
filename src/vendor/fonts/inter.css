@@ -13,6 +13,7 @@
   font-display: swap;
   src: url('../fonts/Aeonik-RegularItalic.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Aeonik';
   font-style: normal;
@@ -20,6 +21,7 @@
   font-display: swap;
   src: url('../fonts/Aeonik-Medium.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Aeonik';
   font-style: italic;
@@ -27,6 +29,7 @@
   font-display: swap;
   src: url('../fonts/Aeonik-MediumItalic.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Aeonik';
   font-style: normal;
@@ -34,6 +37,7 @@
   font-display: swap;
   src: url('../fonts/Aeonik-Bold.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Aeonik';
   font-style: italic;
@@ -56,4 +60,28 @@
   font-weight: 300;
   font-display: swap;
   src: url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/SFPro400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/SFPro500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/SFPro700.woff') format('woff');
 }

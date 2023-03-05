@@ -10,13 +10,17 @@ import AboutUs from "../../Pages/AboutUs/AboutUs";
 import Process from "../../Pages/Process/Process";
 import Contact from "../../Pages/Contact/Contact";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
-
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
+
   return (
     <div className={`App`}>
       <Routes>
-        <Route path='/' element={<Main />} />
+        <Route path='/' element={<Main
+          languageText={t}
+        />} />
 
         <Route path='/about-us' element={<AboutUs />} />
 
@@ -24,7 +28,9 @@ function App() {
 
         <Route path='/works-vivaldis' element={<WorksVivaldis />} />
 
-        <Route path="/news" element={<News />} />
+        <Route path="/news" element={<News
+          languageText={t}
+        />} />
 
         <Route path='/news-finalist' element={<NewsFinalist />} />
 

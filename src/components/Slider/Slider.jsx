@@ -6,7 +6,7 @@ import "./slick.css";
 import "./slick-theme.css";
 import { useEffect } from "react";
 
-const MySlider = () => {
+const MySlider = ({languageText}) => {
 
   useEffect(() => {
     const cursor = document.querySelector('.follow-cursor');
@@ -33,7 +33,7 @@ const MySlider = () => {
         <div className="slider__card slider__card_branding">
           <Link className="slider__card__link" to='/branding'>
             <div className="slider__card__container">
-              <h2 className="slider__card__title">Branding</h2>
+              <h2 className="slider__card__title">{languageText('sliderCardTitleBranding')}</h2>
               <div className="slider__card__arrow">
                 <img className="slider__card__arrow__img_1" src={arrowRight} alt="arrow" />
                 <img className="slider__card__arrow__img_2" src={arrowRight} alt="arrow" />
@@ -45,7 +45,7 @@ const MySlider = () => {
         <div className="slider__card slider__card_product">
           <Link className="slider__card__link" to='/product'>
             <div className="slider__card__container">
-              <h2 className="slider__card__title">Product</h2>
+              <h2 className="slider__card__title">UI/UX</h2>
               <div className="slider__card__arrow">
                 <img className="slider__card__arrow__img_1" src={arrowRight} alt="arrow" />
                 <img className="slider__card__arrow__img_2" src={arrowRight} alt="arrow" />
@@ -57,7 +57,7 @@ const MySlider = () => {
         <div className="slider__card slider__card_development">
           <Link className="slider__card__link" to='/development'>
             <div className="slider__card__container">
-              <h2 className="slider__card__title">Development</h2>
+              <h2 className="slider__card__title">{languageText('sliderCardTitleDevelopment')}</h2>
               <div className="slider__card__arrow">
                 <img className="slider__card__arrow__img_1" src={arrowRight} alt="arrow" />
                 <img className="slider__card__arrow__img_2" src={arrowRight} alt="arrow" />
