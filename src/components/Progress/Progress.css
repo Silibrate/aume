@@ -32,6 +32,16 @@
   overflow: hidden;
 }
 
+.progress__awards__title_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  max-width: 100%;
+}
+
 .progress__awards__title_botton {
   overflow: hidden;
   transition: all 0.8s cubic-bezier(.39, 0, .16, .94);
@@ -92,9 +102,18 @@
   transition: all 1s linear;
 }
 
+.progress__technology__title_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 .progress__technology__title_red {
   color: #b10e0e;
   min-width: 291px;
+  margin-top: 7px;
 }
 
 .progress__technology__info {
@@ -110,6 +129,15 @@
   line-height: 31px;
   letter-spacing: 0.01em;
   transition: all 1s cubic-bezier(.5, .06, 0, 1);
+}
+
+.progress__technology__info__text_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  max-width: 538px;
 }
 
 .progress__technology__info__number {
@@ -138,6 +166,15 @@
   opacity: 0.7;
   margin-top: 77px;
   transition: all 0.5s;
+}
+
+.progress__technology__info__number__text_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
 }
 
 .progress__technology__info__number__conteiner {
@@ -173,6 +210,108 @@
 
 .block__number {
   position: relative;
+}
+
+@media screen and (max-width:1711px) {
+  .progress__awards__title {
+    font-size: 2.4vw;
+    line-height: 2.4vw;
+  }
+
+  .progress__awards__container {
+    overflow-x: scroll;
+  }
+
+  .progress__technology__info {
+    margin-left: 12vw;
+  }
+
+  .progress__technology__info__text {
+    font-size: 1.7vw;
+    line-height: 1.7vw;
+  }
+
+  .progress__technology__info__number_100 {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+
+  .progress__technology__info__number_small {
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .progress__technology {
+    padding-top: 100px;
+  }
+
+  .progress__container {
+    margin-left: 172px;
+  }
+
+  .progress__technology__container {
+    max-width: calc(100% - 344px);
+  }
+}
+
+@media screen and (max-width:1342px) {
+
+  .progress{
+    padding-bottom: 180px;
+  }
+
+  .progress__awards__container {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+
+  .progress__awards__card__logo__img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .progress__technology__info__number {
+    margin-top: 100px;
+  }
+  .progress__technology__info{
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width:1072px) {
+  .progress__container {
+    margin-left: 10px;
+  }
+
+  .progress__technology__container {
+    max-width: 100%;
+    margin-left: 10px;
+  }
+
+  .progress__technology__info {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width:986px){
+.progress__technology__info__number{
+  margin-top: 50px;
+}
+
+.progress__technology__info__number__text {
+  margin-top: 49px;
+}
+
+.progress__technology__title{
+  font-size: 15px;
+}
+
+.progress__technology__title_red  {
+  font-size: 15px;
+}
 }
 
 @media screen and (max-width:580px) {

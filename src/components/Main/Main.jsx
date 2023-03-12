@@ -9,37 +9,47 @@ import About from "../About/About";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const Main = ({ languageText }) => {
+const Main = ({ languageText, ru }) => {
   return (
     <>
       <Header />
-      <AumiInfo
+      {/*    <AumiInfo
         languageText={languageText}
+        ru={ru}
       />
       <Creative
         languageText={languageText}
+        ru={ru}
       />
       <Slider
         languageText={languageText}
+        ru={ru}
       />
       <Progress
         languageText={languageText}
-      />
-      <Work
+        ru={ru}
+      /> */}
+      {/*    <Work
         languageText={languageText}
-      />
+        ru={ru}
+      /> */}
       <Comments
         languageText={languageText}
+        ru={ru}
       />
       <About
         languageText={languageText}
+        ru={ru}
       />
       <AumiForm
         languageText={languageText}
+        ru={ru}
       />
-      <Footer 
-      languageText={languageText}
-      />
+      {/* 
+      <Footer
+        languageText={languageText}
+        ru={ru}
+      /> */}
     </>
   );
 }

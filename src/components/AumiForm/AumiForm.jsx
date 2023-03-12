@@ -1,7 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useAnimation, motion } from "framer-motion";
 import { useState } from "react";
-const AumiForm = ({languageText}) => {
+
+const AumiForm = ({ languageText }) => {
   const location = useLocation();
 
   const imgAnimation = useAnimation()
@@ -9,9 +10,9 @@ const AumiForm = ({languageText}) => {
 
   const handleMouseMove = e => {
     const { clientX, clientY } = e
-    const moveX = clientX - window.innerWidth / 2
-    const moveY = clientY - window.innerHeight / 2
-    const offsetFactor = 10
+    const moveX = clientX - window.innerWidth / 1.3
+    const moveY = clientY - window.innerHeight / 1.3
+    const offsetFactor = 8
     imgAnimation.start({
       x: moveX / offsetFactor,
       y: moveY / offsetFactor
@@ -32,7 +33,7 @@ const AumiForm = ({languageText}) => {
       Body: `Имя: ${userInfo.firstName} Фамилия: ${userInfo.firstName} Телефон: ${userInfo.phone}  Емайл: ${userInfo.email} Компания: ${userInfo.companyName} Детали: ${userInfo.projectDetails}`
     };
 
-      window.Email.send(config)
+    window.Email.send(config)
       .then((response) => {
         alert('Успешно отправлено!', response);
       })
@@ -41,6 +42,8 @@ const AumiForm = ({languageText}) => {
         alert('Что-то пошло не так...', error)
       });
   }
+
+
 
   return (
     <section className={`aumiForm ${location.pathname === '/contact' ? 'aumiForm_conact' : ''}`}>
@@ -97,7 +100,6 @@ const AumiForm = ({languageText}) => {
 
         </form>
       </div>
-
     </section>
   );
 }

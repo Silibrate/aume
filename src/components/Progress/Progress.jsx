@@ -4,14 +4,14 @@ import Hackathon from '../../images/Hackathon.svg';
 import Css from '../../images/Css.svg';
 import Dprofile from '../../images/Dprofile.svg';
 
-const Progress = ({ languageText}) => {
+const Progress = ({ languageText, ru }) => {
 
   return (
     <section className="progress">
       <div className="progress__container">
         <div className="progress__awards">
-          <h3 className="progress__awards__title">{languageText('progressAwardsTitle')}</h3>
-          <h3 className="progress__awards__title progress__awards__title_botton">{languageText('progressAwardsTitleBotton')}</h3>
+          <h3 className={`progress__awards__title ${ru ? 'progress__awards__title_ru' : ''}`}>{languageText('progressAwardsTitle')}</h3>
+          <h3 className={`progress__awards__title progress__awards__title_botton ${ru ? 'progress__awards__title_ru' : ''}`}>{languageText('progressAwardsTitleBotton')}</h3>
           <div className="progress__awards__container">
 
             <div className="progress__awards__card">
@@ -54,28 +54,28 @@ const Progress = ({ languageText}) => {
       </div>
       <div className="progress__technology">
         <div className="progress__technology__container">
-          <p className='progress__technology__title'>{languageText('progressTechnologyTitle')}
-            <span className='progress__technology__title_red' >{languageText('progressTechnologyTitleRed')} </span></p>
+          <p className={`progress__technology__title ${ru ? 'progress__technology__title_ru' : ''}`}>{languageText('progressTechnologyTitle')}
+            <span className={`progress__technology__title_red  ${ru ? 'progress__technology__title_ru' : ''}`} >{languageText('progressTechnologyTitleRed')} </span></p>
           <div className="progress__technology__info">
-            <p className="progress__technology__info__text">{languageText('progressTechnologyInfoText')} </p>
+            <p className={`progress__technology__info__text ${ru ? 'progress__technology__info__text_ru' : ''}`}>{languageText('progressTechnologyInfoText')} </p>
             <div className="progress__technology__info__number">
               <div className="block__number">
 
                 <p className='progress__technology__info__number_100'>100+</p>
 
                 <span className="line line_number"></span>
-                <p className='progress__technology__info__number__text'>{languageText('progressTechnologyInfoNumberTextOne')}</p>
+                <p className={`progress__technology__info__number__text ${ru ? 'progress__technology__info__number__text_ru' : ''}`}>{languageText('progressTechnologyInfoNumberTextOne')}</p>
               </div>
 
               <div className="progress__technology__info__number__conteiner">
                 <div className="progress__technology__info__number__content">
                   <p className='progress__technology__info__number_small'>5+ </p>
-                  <p className='progress__technology__info__number__text'>{languageText('progressTechnologyInfoNumberTextTwo')} </p>
+                  <p className={`progress__technology__info__number__text ${ru ? 'progress__technology__info__number__text_ru' : ''}`}>{languageText('progressTechnologyInfoNumberTextTwo')} </p>
                   <span className="line line_number"></span>
                 </div>
                 <div className="progress__technology__info__number__content">
                   <p className='progress__technology__info__number_small'>10+ </p>
-                  <p className='progress__technology__info__number__text'>{languageText('progressTechnologyInfoNumberTextTree')}</p>
+                  <p className={`progress__technology__info__number__text ${ru ? 'progress__technology__info__number__text_ru' : ''}`}>{languageText('progressTechnologyInfoNumberTextTree')}</p>
                   <span className="line line_number"></span>
                 </div>
               </div>

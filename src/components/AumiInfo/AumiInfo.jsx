@@ -1,8 +1,5 @@
-const AumiInfo = ({ languageText }) => {
+const AumiInfo = ({ languageText, ru }) => {
 
-  const ru = languageText('aumiInfoTitleOne') === "Дизайн.";
-
-  console.log(ru)
   return (
     <div className="aumiInfo">
       <div className="aumiInfo__container">

@@ -26,7 +26,15 @@
   font-size: 32px;
   line-height: 35px;
   letter-spacing: -0.01em;
-  transition: all 1s;
+}
+
+.creative__text_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
 }
 
 .creative__title {
@@ -59,9 +67,12 @@
 .line {
   height: 1px;
   background-color: #626262;
-  transition: all 1s cubic-bezier(.39, 0, .16, .94);
   margin-left: 50px;
   width: 90%;
+}
+
+.line_ru {
+  width: 87%;
 }
 
 @media screen and (max-width:1919px) {

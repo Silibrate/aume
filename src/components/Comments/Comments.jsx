@@ -5,7 +5,7 @@ import avtor1 from '../../images/avtor1.svg';
 import liixxx from '../../images/liixxx.jpg';
 import { useState } from 'react';
 
-const Comments = ({languageText}) => {
+const Comments = ({ languageText, ru }) => {
   const [comment, setComment] = useState(1);
 
   const nextComment = () => {
@@ -37,12 +37,12 @@ const Comments = ({languageText}) => {
           </div>
 
           <div className={`comments__content ${comment === 1 ? "comments__content_active" : ""}`}>
-            <p className="comments__content__text">{languageText('commentsContentTextOne')} </p>
+            <p className={`comments__content__text ${ru ? 'comments__content__text_ru' : ''}`}>{languageText('commentsContentTextOne')} </p>
             <div className="comments__content__avtor">
-              <img  className='comments__content__avtor__img' src={liixxx} alt="Avtor" />
+              <img className='comments__content__avtor__img' src={liixxx} alt="Avtor" />
               <div className="comments__content__avtor__info">
-                <p className="comments__content__avtor__info__name">{languageText('commentsContentAvtorInfoNameOne')}</p>
-                <p className="comments__content__avtor__info__about">{languageText('commentsContentAvtorInfoAboutOne')}</p>
+                <p className={`comments__content__avtor__info__name ${ru ? 'comments__content__avtor__info__name_ru' : ''}`}>{languageText('commentsContentAvtorInfoNameOne')}</p>
+                <p className={`comments__content__avtor__info__about ${ru ? 'comments__content__avtor__info__about_ru' : ''}`}>{languageText('commentsContentAvtorInfoAboutOne')}</p>
               </div>
             </div>
           </div>

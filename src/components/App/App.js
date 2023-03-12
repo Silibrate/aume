@@ -14,12 +14,13 @@ import { useTranslation } from "react-i18next";
 
 function App() {
   const { t } = useTranslation();
-
+  const ru = t('aumiInfoTitleOne') === "Дизайн.";
   return (
     <div className={`App`}>
       <Routes>
         <Route path='/' element={<Main
           languageText={t}
+          ru={ru}
         />} />
 
         <Route path='/about-us' element={<AboutUs />} />

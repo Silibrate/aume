@@ -24,6 +24,10 @@
   transition: all 0.9s cubic-bezier(.39, 0, .16, .94);
 }
 
+.about__title_ru {
+  font-family: 'SF Pro Display';
+}
+
 .about__text {
   max-width: 518px;
   margin-left: 763px;
@@ -35,6 +39,10 @@
   letter-spacing: 0.01em;
   color: #FFFFFF;
   opacity: 0.9;
+}
+
+.about__text_ru {
+  font-family: 'SF Pro Display';
 }
 
 .about__img {
@@ -62,6 +70,48 @@
 .about__button__about {
   margin-left: 763px;
   margin-top: 58px;
+}
+
+.about__button__about_ru {
+  font-family: 'SF Pro Display';
+}
+
+@media screen and (max-width:1440px) {
+  .about__title {
+    margin-left: 40%;
+    font-size: 9vw;
+  }
+
+  .about__text {
+    margin-left: 40%;
+    margin-right: 20px;
+  }
+
+  .about__button__about {
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width:955px) {
+
+  .about {
+    padding-top: 100px;
+  }
+
+  .about__title {
+    font-size: 10vw;
+    margin-top: 20px;
+  }
+
+  .about__title_ru {
+    font-size: 12vw;
+    margin-top: 20px;
+  }
+
+  .about__text {
+    font-size: 2.3vw;
+    line-height: 2.5vw;
+  }
 }
 
 @media screen and (max-width:580px) {

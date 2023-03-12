@@ -40,6 +40,15 @@
   margin-left: 30px;
 }
 
+.slider__card__title_ru {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+
 .slider__card__link {
   text-decoration: none;
   position: relative;
@@ -241,6 +250,12 @@
   align-self: center;
 }
 
+@media screen and (max-width:1440px){
+  .slider{
+    padding-bottom: 180px;
+  }
+}
+
 @media screen and (max-width:1248px) {
   .slider__card__title {
     font-size: 2.5vw;
@@ -311,7 +326,7 @@
     height: 150px;
   }
 
-  .slider__card{
+  .slider__card {
     border-right: none;
   }
 
@@ -320,7 +335,7 @@
     line-height: 20px;
   }
 
-  .slider__card_circle{
+  .slider__card_circle {
     display: flex;
     height: 344px;
   }

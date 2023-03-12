@@ -4,7 +4,7 @@ import kirpich from '../../images/kirpich.png';
 import bunka from '../../images/bunka.png';
 import { useAnimation, motion } from "framer-motion";
 
-const Work = ({ languageText }) => {
+const Work = ({ languageText, ru }) => {
 
   const imgAnimation = useAnimation()
   console.log(window.innerWidth)
@@ -52,13 +52,13 @@ const Work = ({ languageText }) => {
       </div>
       <div className={`work__all`}>
         <div className={`work__all__container`}>
-          <div className={`work__all__content`}>
-            <p className="work__all__text work__all__text_left">{languageText('workAllTextLeft')}<span className='top__line'></span></p>
-            <p className="work__all__text work__all__text_right">{languageText('workAllTextRight')}<span className='bottom__line'></span></p>
+          <div className={`work__all__content ${ru ? 'work__all__content_ru' : ''}`}>
+            <p className={`work__all__text work__all__text_left  ${ru ? 'work__all__text_ru work__all__text_left_ru' : ''}`}>{languageText('workAllTextLeft')}<span className='top__line'></span></p>
+            <p className={`work__all__text work__all__text_right ${ru ? 'work__all__text_ru work__all__text_right_ru' : ''}`}>{languageText('workAllTextRight')}<span className='bottom__line'></span></p>
           </div>
           <div className="wrapper__link  ">
             <Link
-              onClick={'scroll:0'} className={`work__all__link `} to='/works'>{languageText('workAllLink')}</Link>
+              onClick={'scroll:0'} className={`work__all__link ${ru ? 'work__all__link_ru' : ''}`} to='/works'>{languageText('workAllLink')}</Link>
           </div>
         </div>
       </div>
